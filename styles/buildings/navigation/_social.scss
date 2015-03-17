@@ -1,0 +1,137 @@
+.social-navigation {
+	margin: 10%;
+}
+
+.social-navigation ul {
+	list-style: none;
+	margin: 0;
+}
+
+.social-navigation li {
+	float: left;
+	margin: 0 1px 1px 0;
+}
+
+.social-navigation a {
+	background-color: rgba(0, 0, 0, 0.04);
+	display: block;
+	height: 50px;
+	position: relative;
+	width: 50px;
+}
+
+.social-navigation a:before {
+	color: #444444;
+	content: "\f415";
+	font-size: 24px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	width: 48px;
+}
+
+.social-navigation a:hover:before,
+.social-navigation a:focus:before {
+	color: #0074b8;
+}
+
+.social-navigation a[href*="codepen.io"]:before {
+	content: "\f216";
+}
+
+.social-navigation a[href*="digg.com"]:before {
+	content: "\f221";
+}
+
+.social-navigation a[href*="dribbble.com"]:before {
+	content: "\f201";
+}
+
+.social-navigation a[href*="dropbox.com"]:before {
+	content: "\f225";
+}
+
+.social-navigation a[href*="facebook.com"]:before {
+	content: "\f203";
+}
+
+.social-navigation a[href*="flickr.com"]:before {
+	content: "\f211";
+}
+
+.social-navigation a[href*="foursquare.com"]:before {
+	content: "\f226";
+}
+
+.social-navigation a[href*="plus.google.com"]:before {
+	content: "\f206";
+}
+
+.social-navigation a[href*="github.com"]:before {
+	content: "\f200";
+}
+
+.social-navigation a[href*="instagram.com"]:before {
+	content: "\f215";
+}
+
+.social-navigation a[href*="linkedin.com"]:before {
+	content: "\f208";
+}
+
+.social-navigation a[href*="pinterest.com"]:before {
+	content: "\f210";
+}
+
+.social-navigation a[href*="getpocket.com"]:before {
+	content: "\f224";
+}
+
+.social-navigation a[href*="polldaddy.com"]:before {
+	content: "\f217";
+}
+
+.social-navigation a[href*="reddit.com"]:before {
+	content: "\f222";
+}
+
+.social-navigation a[href*="stumbleupon.com"]:before {
+	content: "\f223";
+}
+
+.social-navigation a[href*="tumblr.com"]:before {
+	content: "\f214";
+}
+
+.social-navigation a[href*="twitter.com"]:before {
+	content: "\f202";
+}
+
+.social-navigation a[href*="vimeo.com"]:before {
+	content: "\f212";
+}
+
+.social-navigation a[href*="wordpress.com"]:before,
+.social-navigation a[href*="wordpress.org"]:before {
+	content: "\f205";
+}
+
+.social-navigation a[href*="youtube.com"]:before {
+	content: "\f213";
+}
+
+.social-navigation a[href*="mailto:"]:before {
+	content: "\f410";
+}
+
+.social-navigation a[href*="spotify.com"]:before {
+	content: "\f515";
+}
+
+.social-navigation a[href*="twitch.tv"]:before {
+	content: "\f516";
+}
+
+.social-navigation a[href$="/feed/"]:before {
+	content: "\f413";
+}
