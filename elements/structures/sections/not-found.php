@@ -1,7 +1,3 @@
-<?php
-
-function atomic_s_notfound() {
-?>
 <section class="error-404 not-found">
   <header class="page-header">
     <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'atomic_s' ); ?></h1>
@@ -41,5 +37,3 @@ function atomic_s_notfound() {
 
   </div><!-- .page-content -->
 </section><!-- .error-404 -->
-<?php
-}

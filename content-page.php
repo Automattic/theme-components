@@ -4,5 +4,8 @@
  *
  * @package atomic_s
  */
+
+//elements/structures/article/article-page.php
+
 ?>
-<?php atomic_s_articlepage(); ?>
+

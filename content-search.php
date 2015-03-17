@@ -6,5 +6,8 @@
  *
  * @package atomic_s
  */
+
+//elements/structures/article/article-search.php
+
 ?>
-<?php atomic_s_articlesearch(); ?>
+

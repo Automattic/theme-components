@@ -1,7 +1,3 @@
-<?
-
-function atomic_s_articlesearch() {
-?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
@@ -21,6 +17,3 @@ function atomic_s_articlesearch() {
 		<?php atomic_s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
-<?php
-}

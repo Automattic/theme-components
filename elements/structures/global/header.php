@@ -1,10 +1,4 @@
-<?
-
-function atomic_s_header() {
-?>
 <header id="masthead" class="site-header" role="banner">
-  <?php atomic_s_branding(); ?>
-  <?php atomic_s_primarynav(); ?>
+  <?php //elements/structures/global/branding.php ?>
+  <?php //elements/buildings/navigation/nav-primary.php ?>
 </header><!-- #masthead -->
-<?php
-}

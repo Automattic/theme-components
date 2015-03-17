@@ -4,4 +4,5 @@
  *
  * @package atomic_s
  */
-atomic_s_viewsearch(); ?>
+
+// elements/views/view-search.php

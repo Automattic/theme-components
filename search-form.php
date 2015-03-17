@@ -1,3 +1,3 @@
 <?php
 
-atomic_s_searchform();
+// elements/buildings/search-form.php

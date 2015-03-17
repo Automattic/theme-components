@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<?php atomic_s_footer(); ?>
+	<?php //elements/structures/global/footer.php ?>
 
 </div><!-- #page -->
 

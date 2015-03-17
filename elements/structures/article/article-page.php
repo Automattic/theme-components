@@ -1,7 +1,3 @@
-<?
-
-function atomic_s_articlepage() {
-?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -21,5 +17,3 @@ function atomic_s_articlepage() {
 		<?php edit_post_link( __( 'Edit', 'atomic_s' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-<?php
-}

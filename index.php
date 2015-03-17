@@ -10,4 +10,5 @@
  *
  * @package atomic_s
  */
-atomic_s_viewindex(); ?>
+
+// elements/views/view-index.php

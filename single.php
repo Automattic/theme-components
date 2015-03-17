@@ -5,4 +5,4 @@
  * @package atomic_s
  */
 
-atomic_s_viewsingle(); ?>
+// elements/views/view-single.php

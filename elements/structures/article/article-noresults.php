@@ -1,7 +1,3 @@
-<?
-
-function atomic_s_noresults() {
-?>
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'atomic_s' ); ?></h1>
@@ -25,5 +21,3 @@ function atomic_s_noresults() {
 		<?php endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
-<?php
-}

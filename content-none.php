@@ -6,5 +6,8 @@
  *
  * @package atomic_s
  */
+
+//elements/structures/article/article-noresults.php
+
 ?>
-<?php atomic_s_noresults(); ?>
+

@@ -1,9 +1,3 @@
-<?
-
-function atomic_s_footer() {
-?>
 <footer id="colophon" class="site-footer" role="contentinfo">
-  <?php atomic_s_siteinfo(); ?>
+  <?php //elements/structures/global/site-info.php ?>
 </footer><!-- #colophon -->
-<?php
-}

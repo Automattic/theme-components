@@ -5,4 +5,4 @@
  * @package atomic_s
  */
 
-atomic_s_sidebar(); ?>
+// elements/strucutres/sidebar.php 

@@ -1,7 +1,3 @@
-<?
-
-function atomic_s_comments_list() {
-  ?>
   <ol class="comment-list">
     <?php
       wp_list_comments( array(
@@ -10,5 +6,3 @@ function atomic_s_comments_list() {
       ) );
     ?>
   </ol><!-- .comment-list -->
-  <?php endif;
-}

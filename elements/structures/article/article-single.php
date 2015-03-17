@@ -1,7 +1,3 @@
-<?
-
-function atomic_s_articlesingle() {
-?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -25,6 +21,3 @@ function atomic_s_articlesingle() {
 		<?php atomic_s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
-<?php
-}

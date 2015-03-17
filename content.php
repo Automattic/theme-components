@@ -2,6 +2,7 @@
 /**
  * @package atomic_s
  */
-?>
 
-<?php atomic_s_article(); ?>
+//elements/structures/article/article.php
+
+?>

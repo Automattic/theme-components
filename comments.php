@@ -24,13 +24,13 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<?php atomic_s_comments_title(); ?>
+		<?php //elements/structures/comments/comments-title.php ?>
 
-		<?php atomic_s_comments_top(); ?>
+		<?php //elements/structures/nav-comment-top.php ?>
 
-		<?php atomic_s_comments_list(); ?>
+		<?php //elements/structures/comments/comments-title.php ?>
 
-		<?php atomic_s_comments_below(); ?>
+		<?php //elements/structures/nav-comment-below.php ?>
 
 	<?php endif; // have_comments() ?>
 

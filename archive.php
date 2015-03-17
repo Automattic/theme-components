@@ -7,4 +7,6 @@
  * @package atomic_s
  */
 
-atomic_s_viewarchive(); ?>
+//elements/views/view-archive.php
+
+?>

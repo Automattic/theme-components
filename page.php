@@ -10,4 +10,4 @@
  * @package atomic_s
  */
 
-atomic_s_viewpage(); ?>
+// elements/views/view-page.php
