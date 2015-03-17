@@ -1,0 +1,245 @@
+
+
+
+
+/* Design and Code Samples */
+.sample {
+	padding: 20px;
+	margin: 0 -20px;
+
+	article {
+		background: #fff;
+		border: 2px solid rgba( $blue-dark, 0.4 );
+	}
+
+	pre {
+		border-radius: 0;
+		margin: 0;
+		padding: 30px 40px;
+		max-height: 100%;
+		overflow: auto;
+		border: none;
+	}
+}
+
+#typesetting-sample {
+	font-famiy: "Open Sans", helvetica, arial, sans-serif;
+	padding: 40px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	h1 {
+		font-family: "Merriweather", georgia, serif;
+		font-size: 2.291em;
+		font-weight: 700;
+		line-height: 1.258;
+		margin: 0 0 15px 0;
+	}
+	h1 a {}
+	h1 a:hover {}
+
+	h4 {
+		font-weight: 700;
+		font-size: 0.875em;
+		line-height: 1.618;
+		text-transform: uppercase;
+		letter-spacing: 0.079em;
+		margin: 0 0 15px 0;
+		color: lighten( $gray-dark, 50% );
+	}
+	h4 a {
+		color: lighten( $gray-dark, 30% );
+	}
+	h4 a:hover {
+		color: $orange-fire;
+	}
+
+	p {
+		margin: 0;
+		fong-weight: 400;
+		font-size: 1em;
+		line-height: 1.618;
+	}
+}
+
+
+
+.pattern {
+	padding: 15px 0 25px 0;
+	color: rgba(0,0,0,0.6);
+	line-height: 1.7;
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		border: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	h3 {
+		margin: 0 20px 0 0;
+		font-family: "Open Sans", helvetica, arial, sans-serif;
+		font-weight: 400;
+		font-size: 1.4em;
+		line-height: 1.618;
+		color: rgba(0,0,0,0.8);
+	}
+}
+
+
+/* Color Swatch */
+.swatches {
+	padding: 2% 0;
+	margin: 0 -2%;
+	&:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+
+	.swatch {
+		.type-demo {
+			line-height: 200px;
+			width: 100%;
+			text-align: center;
+		}
+
+		&.open-sans-300 .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 300;
+			font-size: 100px;
+		}
+
+		&.open-sans-500 .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 500;
+			font-size: 100px;
+		}
+
+		&.open-sans-title .type-demo {
+			font-family: 'Open Sans', arial, verdana, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		&.merriweather-700 .type-demo {
+			font-family: 'Merriweather';
+			font-weight: 700;
+			font-size: 100px;
+		}
+
+		&.merriweather-900 .type-demo {
+			font-family: 'Merriweather';
+			font-weight: 900;
+			font-size: 100px;
+		}
+	}
+
+	@media screen and ( min-width: 800px ) {
+		.swatch {
+			margin: 0 1%;
+		}
+		&.col-1 .swatch { width: 96%; }
+		&.col-2 .swatch { width: 48%; }
+		&.col-3 .swatch { width: 31.33%; }
+		&.col-4 .swatch { width: 23%; }
+	}
+}
+
+
+/* Type Swatch */
+
+
+
+
+/* Syntax Highlighter (rainbow.js) Styles */
+/* Modified version of the "GitHub theme," by Craig Campbell (v1.0.4) */
+pre {
+border: 1px solid #ccc;
+word-wrap: break-word;
+padding: 16px 20px;
+line-height: 19px;
+margin-bottom: 20px;
+}
+
+code {
+border: 1px solid #eaeaea;
+margin: 0px 2px;
+padding: 0px 5px;
+font-size: 13px;
+}
+
+pre code {
+border: 0px;
+padding: 0px;
+margin: 0px;
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
+
+pre, code {
+font-family: 'Source Code Pro', Consolas, 'Liberation Mono', Courier, monospace;
+color: #333;
+font-weight: 300;
+background: $gray-light;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+pre, pre code {
+font-size: 14px;
+}
+
+pre .comment {
+color: #998;
+}
+
+pre .support {
+color: #0086B3;
+}
+
+pre .tag, pre .tag-name {
+color: $blue-dark;
+font-weight: 600;
+}
+
+pre .keyword, pre .css-property, pre .vendor-prefix, pre .sass, pre .class, pre .id, pre .css-value, pre .entity.function, pre .storage.function {
+font-weight: 500;
+}
+
+pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
+color: $gray-dark;
+}
+
+pre .constant.numeric, pre .keyword.unit, pre .hex-color {
+font-weight: normal;
+color: $blue-medium;
+}
+
+pre .entity.class {
+color: #458;
+}
+
+pre .entity.id, pre .entity.function {
+color: #900;
+}
+
+pre .attribute, pre .variable {
+color: $blue-medium;
+}
+
+pre .string, pre .support.value  {
+font-weight: normal;
+color: $orange-fire;
+}
+
+pre .regexp {
+color: #009926;
+}
