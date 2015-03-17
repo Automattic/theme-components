@@ -13,7 +13,7 @@
 		<script src="../js/vendor/rainbow.min.js"></script>
 		<script src="../js/language/generic.js"></script>
 		<script src="../js/language/css.js"></script>
-		<script src="../js/language/html.js"></script>
+		<script src=".../js/language/html.js"></script>
 		<script src="../js/language/javascript.js"></script>
 		<script src="../js/language/php.js"></script>
 	</head>
@@ -25,18 +25,16 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle">Navigation</button>
 				<ul>
-					<li class="current"><a href="../index.html">Introduction</a></li>
-					<li><a href="../docs/index.html">How to use</a></li>
-					<li><a href="../bricks/index.html">Bricks</a></li>
-					<li><a href="../buildings/index.html">Buildings</a></li>
-					<li><a href="../structures/index.html">Structures</a></li>
-					<li><a href="../views/index.html">Views</a></li>
-					<li><a href="../index.html">Types</a></li>
+					<li class="current"><a href="../../../index.html">Introduction</a></li>
+					<li><a href="../../docs/index.html">How to use</a></li>
+					<li><a href="../../bricks/index.html">Bricks</a></li>
+					<li><a href="../../buildings/index.html">Buildings</a></li>
 						<ul>
-							<li>
-								<a href="../types/feature-photo/index.html">Feature Photo</a>
-							</li>
+							<li><a href="../../navigation/index.html">Navigation</a></li>
 						</ul>
+					<li><a href="../../structures/index.html">Structures</a></li>
+					<li><a href="../../views/index.html">Views</a></li>
+					<li><a href="../../types/index.html">Types</a></li>
 				</ul>
 			</nav><!-- #site-navigation -->
 
@@ -44,9 +42,29 @@
 				<article id="handbook-intro" class="page">
 
 					<header class="page-header">
-						<h1>Types</h1>
-						<p>There are various types premade for you to use. These are more feature packed and come with some styling than the basic pattern library.</p>
+						<h1>Introduction</h1>
+						<p>Welcome to the WordPress.com theme pattern library. This is a resource to collate all the scripts and goodies used in themes. From here you can also create types of themes easily.</p>
 					</header>
+
+					<section class="block">
+						<h2>Social navigation</h2>
+						<p>Explaination</p>
+						<pre><code data-language="php">
+							<?php if ( has_nav_menu( 'social' ) ) : ?>
+								<nav id="social-navigation" class="social-navigation" role="navigation">
+									<?php
+									// Social links navigation menu.
+									wp_nav_menu( array(
+										'theme_location' => 'social',
+										'depth'          => 1,
+										'link_before'    => '<span class="screen-reader-text">',
+										'link_after'     => '</span>',
+									) );
+									?>
+								</nav><!-- .social-navigation -->
+							<?php endif; ?>
+						</code></pre>
+					</section>
 
 				</article>
 				<nav id="page-navigation" class="page-links">
