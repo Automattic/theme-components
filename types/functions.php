@@ -51,6 +51,7 @@ function atomic_s_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'atomic_s' ),
+		'social'  => __( 'Social Links Menu', 'resonar' ),
 	) );
 
 	/*
@@ -60,6 +61,7 @@ function atomic_s_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 200, 200, true );
+	add_image_size( 'atomic_s-large', 2000, 1500, true  );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
