@@ -21,6 +21,8 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'atomic_s' ); ?></a>
 
-	<?php //elements/structures/global/header.php
+	<?php //elements/structures/global/header.php ?>
+
+	<?php //elements/structures/global/customheader.php ?>
 
 	<div id="content" class="site-content">
