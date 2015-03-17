@@ -54,6 +54,15 @@ function atomic_s_setup() {
 	) );
 
 	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 200, 200, true );
+	//add_image_size( 'atomic_s-large', 2000, 1500, true  );
+
+	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
