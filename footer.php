@@ -6,15 +6,5 @@
  *
  * @package atomic_s
  */
-?>
 
-	</div><!-- #content -->
-
-	<?php //elements/structures/global/footer.php ?>
-
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
-</body>
-</html>
+//elements/structures/global/footer.php

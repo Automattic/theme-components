@@ -4,5 +4,3 @@
  */
 
 //elements/structures/article/article.php
-
-?>

@@ -7,5 +7,3 @@
 
 //elements/structures/article/article-page.php
 
-?>
-

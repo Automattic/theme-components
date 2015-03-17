@@ -9,5 +9,3 @@
 
 //elements/structures/article/article-noresults.php
 
-?>
-

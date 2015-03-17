@@ -5,4 +5,4 @@
  * @package atomic_s
  */
 
-//elements/views/view-error.php ?>
+//elements/views/view-error.php

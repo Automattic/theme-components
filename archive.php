@@ -8,5 +8,3 @@
  */
 
 //elements/views/view-archive.php
-
-?>

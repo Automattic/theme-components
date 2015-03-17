@@ -5,5 +5,3 @@
 
 //elements/structures/article/article-single.php
 
-?>
-
