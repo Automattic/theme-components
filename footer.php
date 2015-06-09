@@ -4,14 +4,18 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package atomic_s
+ * @package component_s
  */
+
 ?>
 
 	</div><!-- #content -->
 
-	<?php atomic_s_footer(); ?>
+	<footer id="colophon" class="site-footer" role="contentinfo">
 
+		<!-- INSERT: site-info/site-info.php -->
+
+	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

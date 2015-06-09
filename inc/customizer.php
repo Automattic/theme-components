@@ -1,8 +1,8 @@
 <?php
 /**
- * atomic_s Theme Customizer
+ * component_s Theme Customizer
  *
- * @package atomic_s
+ * @package component_s
  */
 
 /**
@@ -10,17 +10,17 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function atomic_s_customize_register( $wp_customize ) {
+function component_s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
-add_action( 'customize_register', 'atomic_s_customize_register' );
+add_action( 'customize_register', 'component_s_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function atomic_s_customize_preview_js() {
-	wp_enqueue_script( 'atomic_s_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function component_s_customize_preview_js() {
+	wp_enqueue_script( 'component_s_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'atomic_s_customize_preview_js' );
+add_action( 'customize_preview_init', 'component_s_customize_preview_js' );

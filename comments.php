@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package atomic_s
+ * @package component_s
  */
 
 /*
@@ -24,21 +24,21 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<?php atomic_s_comments_title(); ?>
+		<!-- INSERT: comment-title/comment-title.php -->
 
-		<?php atomic_s_comments_top(); ?>
+		<!-- INSERT: comment-navigation-above/comment-navigation-above.php -->
 
-		<?php atomic_s_comments_list(); ?>
+		<!-- INSERT: comment-list/comment-list.php -->
 
-		<?php atomic_s_comments_below(); ?>
+		<!-- INSERT: comment-navigation-below/comment-navigation-below.php -->
 
-	<?php endif; // have_comments() ?>
+	<?php endif; // Check for have_comments(). ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'atomic_s' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'component_s' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

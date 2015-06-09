@@ -4,8 +4,9 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package atomic_s
+ * @package component_s
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -19,8 +20,14 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'atomic_s' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'component_s' ); ?></a>
 
-	<?php atomic_s_header(); ?>
+	<header id="masthead" class="site-header" role="banner">
+		
+		<!-- INSERT: branding/branding.php -->
+
+		<!-- INSERT: top-navigation/top-navigation.php -->
+
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
