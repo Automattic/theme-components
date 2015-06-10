@@ -92,9 +92,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/widgets";
 
 /*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+@import "layout/structure";
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "layout/site";
+@import "layout/content";
 
 /*--------------------------------------------------------------
 # Infinite scroll
