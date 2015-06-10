@@ -1,0 +1,1 @@
+<?php component_s_the_site_logo(); ?>
