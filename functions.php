@@ -42,7 +42,8 @@ function component_s_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'component_s' ),
+		'top' => esc_html__( 'Top Menu', 'component_s' ),
+		'social'  => __( 'Social Links Menu', 'component_s' ),
 	) );
 
 	/*
