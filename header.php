@@ -26,6 +26,8 @@
 		
 		<!-- INSERT: branding/branding.php -->
 
+		<!-- INSERT: site-logo/site-logo.php -->
+
 		<!-- INSERT: top-navigation/top-navigation.php -->
 
 	</header><!-- #masthead -->
