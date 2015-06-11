@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- INSERT: compoonents/archive-header/archive-header.php -->
+			<!-- INSERT: archive-header/archive-header.php -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -35,12 +35,12 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'components/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!-- SLUSH : remove sidebar -->
 <?php get_footer(); ?>
