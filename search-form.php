@@ -6,4 +6,4 @@
  */
 ?>
 
-<!-- INSERT: search-form/search-form.php -->
+<!-- INSERT: compoonents/search-form/search-form.php -->

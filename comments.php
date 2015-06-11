@@ -24,13 +24,13 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<!-- INSERT: comment-title/comment-title.php -->
+		<!-- INSERT: compoonents/comment-title/comment-title.php -->
 
-		<!-- INSERT: comment-navigation-above/comment-navigation-above.php -->
+		<!-- INSERT: compoonents/comment-navigation-above/comment-navigation-above.php -->
 
-		<!-- INSERT: comment-list/comment-list.php -->
+		<!-- INSERT: compoonents/comment-list/comment-list.php -->
 
-		<!-- INSERT: comment-navigation-below/comment-navigation-below.php -->
+		<!-- INSERT: compoonents/comment-navigation-below/comment-navigation-below.php -->
 
 	<?php endif; // Check for have_comments(). ?>
 
