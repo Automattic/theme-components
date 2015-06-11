@@ -29,6 +29,10 @@ function component_s_infinite_scroll_render() {
 	}
 } // end function component_s_infinite_scroll_render
 
+/**
+* Add theme support for Responsive Videos.
+*/
+add_theme_support( 'jetpack-responsive-videos' );
 
 /**
  * Add support for the Site Logo
@@ -54,7 +58,8 @@ function component_s_the_site_logo() {
 	}
 }
 
+/** SLUSH : add support for testimonials **/
 /**
-* Add theme support for Responsive Videos.
+* Add theme support for Testimonial CPT.
 */
-add_theme_support( 'jetpack-responsive-videos' );
+add_theme_support( 'jetpack-testimonial' );

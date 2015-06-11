@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-		<!-- INSERT: site-info/site-info.php -->
+		<!-- INSERT: compoonents/site-info/site-info.php -->
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -1,7 +1,11 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The main template file.
  *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package component_s
@@ -13,8 +17,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<!-- INSERT: compoonents/archive-header/archive-header.php -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -41,6 +43,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+	
+<!-- SLUSH : remove sidebar -->
 <?php get_footer(); ?>

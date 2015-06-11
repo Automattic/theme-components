@@ -24,11 +24,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		
-		<!-- INSERT: compoonents/branding/branding.php -->
+		<!-- SLUSH : compoonents/branding/branding.php -->
 
-		<!-- INSERT: compoonents/site-logo/site-logo.php -->
+		<!-- SLUSH : compoonents/site-logo/site-logo.php -->
 
-		<!-- INSERT: compoonents/top-navigation/top-navigation.php -->
+		<!-- SLUSH : compoonents/top-navigation/top-navigation.php -->
 
 	</header><!-- #masthead -->
 

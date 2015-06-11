@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- INSERT: compoonents/search-header/search-header.php -->
+			<!-- INSERT: search-header/search-header.php -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -39,5 +39,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<!-- SLUSH : remove sidebar -->
 <?php get_footer(); ?>
