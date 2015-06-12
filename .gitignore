@@ -1,5 +1,2 @@
-node_modules/
-temp
-*.log
 config.codekit
 assets/stylesheets/.sass-cache/
