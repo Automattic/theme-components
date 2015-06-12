@@ -9,7 +9,7 @@ get_header(); ?>
 <!-- SLUSH : add entire template -->
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'compeontns/content', 'hero' ); ?>
+		<?php get_template_part( 'components/content', 'hero' ); ?>
 
 	<?php endwhile; ?>
 
