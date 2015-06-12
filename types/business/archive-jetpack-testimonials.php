@@ -2,7 +2,7 @@
 /**
  * The template for displaying the Testimonials archive page.
  *
- * @package Edin
+ * @package component_s
  */
 
 get_header(); ?>
