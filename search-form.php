@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Madre
+ * The template for displaying search forms
  *
  * @package component_s
  */

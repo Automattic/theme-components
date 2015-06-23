@@ -24,9 +24,9 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-@import "../../components/top-navigation/top-navigation.scss";
+@import "../../components/top-navigation/top-navigation";
 
-@import "../../components/menu-toggle/menu-toggle.scss";
+@import "../../components/menu-toggle/menu-toggle";
 
 .comment-navigation,
 .posts-navigation,
@@ -49,4 +49,4 @@ a {
 	}
 }
 
-@import "../../components/social-menu/social-menu.scss";
+@import "../../components/social-menu/social-menu";
