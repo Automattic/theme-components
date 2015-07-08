@@ -9,8 +9,40 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    color: $color__text-headings;
+    font-family: $font__heading;
+    line-height: $font__line-height-headings;
+}
+
+h1 {
+    font-size: $font__size-h1;
+}
+
+h2 {
+    font-size: $font__size-h2;
+}
+
+h3 {
+    font-size: $font__size-h3;
+}
+
+h4 {
+    font-size: $font__size-h4;
+}
+
+h5 {
+    font-size: $font__size-h5;
+}
+
+h6 {
+    font-size: $font__size-h6;
 }
 
 p {
