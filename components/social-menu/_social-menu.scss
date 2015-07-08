@@ -25,12 +25,12 @@
   padding: 0;
 }
 .social-links ul a {
-  background: #88cc33;
+  background: $color__primary;
   display: inline-block;
   text-decoration: none;
 }
 .social-links ul a:before {
-  color: #fff;
+  color: $color__white;
   display: block;
   font-size: 22px;
   padding: 5px;
@@ -39,12 +39,12 @@
   transition: 0.2s all ease-in-out;
 }
 .social-links ul a:hover {
-  background: #333;
-  color: #fff;
+  background: $color__black;
+  color: $color__white;
   text-decoration: none;
 }
 .social-links ul a:hover:before {
-  color: #fff;
+  color: $color__white;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
