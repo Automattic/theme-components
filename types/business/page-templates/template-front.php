@@ -2,19 +2,16 @@
 /**
  * Template Name: Front Page
  *
- * @package component_s
+ * @package theme-business
  */
 get_header(); ?>
 
-<!-- SLUSH : add entire template -->
-	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'components/content', 'hero' ); ?>
-
-	<?php endwhile; ?>
-
-	<?php rewind_posts(); ?>
-
-<!-- SLUSH : components/testimonials/testimonials.php -->
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+			<?php get_template_part( 'components/content', 'hero' ); ?>
+			<?php get_template_part( 'components/testimonials' ); ?>
+		</main>
+	</div>
 
 <?php get_footer(); ?>
