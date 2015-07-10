@@ -1,14 +1,22 @@
-<?php $testimonials = edin_get_random_posts( 2, 'jetpack-testimonial' ); ?>
+	<?php
+		$testimonials = new WP_Query( array(
+			'post_type'      => 'jetpack-testimonial',
+			'order'          => 'ASC',
+			'orderby'        => 'menu_order',
+			'posts_per_page' => 2,
+			'no_found_rows'  => true,
+		) );
+	?>
 
-<?php if ( ! empty( $testimonials ) && 0 != get_theme_mod( 'edin_testimonials' ) ) : ?>
-	<div id="front-page-testimonials" class="front-page-testimonials-area">
-		<div class="front-page-testimonials-wrapper clear">
-			<?php
-				foreach ( $testimonials as $testimonial ) : setup_postdata( $GLOBALS['post'] =& $testimonial );
-					get_template_part( 'content', 'testimonial' );
-				endforeach;
-				wp_reset_postdata();
-			?>
-		</div><!-- .front-page-testimonials-wrapper -->
-	</div><!-- #front-page-testimonials -->
-<?php endif; ?>
+	<?php if ( $testimonials->have_posts() ) : ?>
+	<div id="front-page-testimonials" class="front-testimonials testimonials">
+		<div class="grid-row">
+		<?php
+			while ( $testimonials->have_posts() ) : $testimonials->the_post();
+				 get_template_part( 'components/content', 'testimonial' );
+			endwhile;
+			wp_reset_postdata();
+		?>
+		</div>
+	</div><!-- .testimonials -->
+	<?php endif; ?>
