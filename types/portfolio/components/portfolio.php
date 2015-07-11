@@ -22,14 +22,14 @@
 					<?php /* Start the Loop */ ?>
 					<?php while ( $project_query -> have_posts() ) : $project_query -> the_post(); ?>
 
-						<?php get_template_part( 'content', 'portfolio' ); ?>
+						<?php get_template_part( 'components/content', 'portfolio' ); ?>
 
 					<?php endwhile; ?>
 
 				</div><!-- .portfolio-wrapper -->
 
 				<?php
-					theme_portfolio_paging_nav( $project_query->max_num_pages );
+					the_posts_navigation();
 					wp_reset_postdata();
 				?>
 
