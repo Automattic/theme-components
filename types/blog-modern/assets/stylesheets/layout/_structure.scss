@@ -1,0 +1,23 @@
+.site{
+  margin: 0 auto;
+}
+
+.content-area {
+  float: none;
+  margin: 0;
+}
+
+.site-main {
+  margin: 0;
+}
+
+.site-content .widget-area {
+  float: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.site-footer {
+  clear: both;
+  width: $size__site-main;
+}
