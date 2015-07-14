@@ -9,7 +9,7 @@ get_header(); ?>
 	<?php
 		if ( is_home() ) {
 			// Include the featured content template.
-			get_template_part( 'featured' );
+			get_template_part( 'components/featured' );
 		}
 	?>
 	<div id="primary" class="content-area">
