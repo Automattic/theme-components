@@ -1,4 +1,9 @@
 <?php
+/* The template for displaying portfolio items
+ * 
+ * @package theme-portfolio
+ */
+ 
 				if ( get_query_var( 'paged' ) ) :
 					$paged = get_query_var( 'paged' );
 				elseif ( get_query_var( 'page' ) ) :
