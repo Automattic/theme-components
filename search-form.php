@@ -6,4 +6,4 @@
  */
 ?>
 
-<!-- INSERT: compoonents/search-form/search-form.php -->
+<?php get_template_part( 'compoonents/search-form/search-form.php' ?>

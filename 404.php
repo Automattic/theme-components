@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<!-- INSERT: components/error/error.php -->
+			<?php get_template_part( 'components/error/error' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

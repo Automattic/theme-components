@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- INSERT: compoonents/archive-header/archive-header.php -->
+			<?php get_template_part( 'compoonents/archive-header/archive-header' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
