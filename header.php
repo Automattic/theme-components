@@ -24,11 +24,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'compoonents/branding/branding' ); ?>
+		<?php get_template_part( 'components/branding/branding' ); ?>
 
-		<?php get_template_part( 'compoonents/site-logo/site-logo' ); ?>
+		<?php get_template_part( 'components/site-logo/site-logo' ); ?>
 
-		<?php get_template_part( 'compoonents/top-navigation/top-navigation' ); ?>
+		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
 
 	</header><!-- #masthead -->
 
