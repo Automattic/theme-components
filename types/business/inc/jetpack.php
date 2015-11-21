@@ -58,7 +58,6 @@ function component_s_the_site_logo() {
 	}
 }
 
-/** SLUSH : add support for testimonials **/
 /**
 * Add theme support for Testimonial CPT.
 */

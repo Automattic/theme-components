@@ -40,7 +40,6 @@ function component_s_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// SLUSH ADD TYPES -->
 	add_image_size( 'component_s-hero', 1280, 1000, true );
 	add_image_size( 'component_s-thumbnail-avatar', 100, 100, true );
 

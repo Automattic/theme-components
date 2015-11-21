@@ -40,7 +40,6 @@ function component_s_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// SLUSH ADD TYPES -->
 	add_image_size( 'theme-portfolio-portfolio-featured-image', 800, 9999 );
 
 	// This theme uses wp_nav_menu() in one location.
