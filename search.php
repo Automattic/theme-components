@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- INSERT: compoonents/search-header/search-header.php -->
+			<?php get_template_part( 'components/search-header/search-header' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'components/content', 'search' );
+				get_template_part( 'components/content-search/content', 'search' );
 				?>
 
 			<?php endwhile; ?>
@@ -32,7 +32,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'components/content', 'none' ); ?>
+			<?php get_template_part( 'components/content-none/content', 'none' ); ?>
 
 		<?php endif; ?>
 
