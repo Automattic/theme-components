@@ -23,12 +23,12 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'component_s' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		
-		<!-- SLUSH : compoonents/branding/branding.php -->
 
-		<!-- SLUSH : compoonents/site-logo/site-logo.php -->
+		<?php get_template_part( 'components/branding/branding' ); ?>
 
-		<!-- SLUSH : compoonents/top-navigation/top-navigation.php -->
+		<?php get_template_part( 'compoonents/site-logo/site-logo' ); ?>
+
+		<?php get_template_part( 'compoonents/top-navigation/top-navigation' ); ?>
 
 	</header><!-- #masthead -->
 

@@ -1,17 +1,21 @@
+.site{
+	margin: 0 auto;
+	width: 100%;
+}
 .content-area {
 	float: none;
 	margin: 0;
-	width: $size__site-main;
+	width: 100%;
 }
 
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
+	margin: 0;
 }
 
 .site-content .widget-area {
 	float: none;
 	overflow: hidden;
-	width: $size__site-sidebar;
+	width: 100%;
 }
 
 .site-footer {

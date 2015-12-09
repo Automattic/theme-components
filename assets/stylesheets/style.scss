@@ -98,11 +98,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/structure";
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "layout/content";
-
-/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 @import "shared/infinite-scroll";
@@ -111,3 +106,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "shared/media";
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+@import "shared/queries";

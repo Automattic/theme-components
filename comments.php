@@ -24,13 +24,13 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<!-- INSERT: compoonents/comment-title/comment-title.php -->
+		<?php get_template_part( 'components/comment-title/comment-title' ); ?>
 
-		<!-- INSERT: compoonents/comment-navigation-above/comment-navigation-above.php -->
+		<?php get_template_part( 'components/comment-navigation-above/comment-navigation-above' ); ?>
 
-		<!-- INSERT: compoonents/comment-list/comment-list.php -->
+		<?php get_template_part( 'components/comment-list/comment-list' ?>
 
-		<!-- INSERT: compoonents/comment-navigation-below/comment-navigation-below.php -->
+		<?php get_template_part( 'components/comment-navigation-below/comment-navigation-below' ); ?>
 
 	<?php endif; // Check for have_comments(). ?>
 
