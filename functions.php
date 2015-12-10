@@ -1,11 +1,11 @@
 <?php
 /**
- * component_s functions and definitions
+ * theme-modern functions and definitions
  *
- * @package component_s
+ * @package theme-modern
  */
 
-if ( ! function_exists( 'component_s_setup' ) ) :
+if ( ! function_exists( 'theme_traditional_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -13,14 +13,14 @@ if ( ! function_exists( 'component_s_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function component_s_setup() {
+function theme_traditional_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on component_s, use a find and replace
-	 * to change 'component_s' to the name of your theme in all the template files
+	 * If you're building a theme based on theme-modern, use a find and replace
+	 * to change 'theme_traditional' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'component_s', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'theme_traditional', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -39,11 +39,12 @@ function component_s_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thememodern-large', 2000, 1500, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'top' => esc_html__( 'Top Menu', 'component_s' ),
-		'social'  => __( 'Social Links Menu', 'component_s' ),
+		'top' => esc_html__( 'Top Menu', 'theme_traditional' ),
+		'social'  => esc_html__( 'Social Links Menu', 'theme_traditional' ),
 	) );
 
 	/*
@@ -71,13 +72,13 @@ function component_s_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'component_s_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'theme_traditional_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // component_s_setup
-add_action( 'after_setup_theme', 'component_s_setup' );
+endif; // theme-modern_setup
+add_action( 'after_setup_theme', 'theme_traditional_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -86,19 +87,19 @@ add_action( 'after_setup_theme', 'component_s_setup' );
  *
  * @global int $content_width
  */
-function component_s_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'component_s_content_width', 640 );
+function theme_traditional_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'theme_traditional_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'component_s_content_width', 0 );
+add_action( 'after_setup_theme', 'theme_traditional_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function component_s_widgets_init() {
+function theme_traditional_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'component_s' ),
+		'name'          => esc_html__( 'Sidebar', 'theme_traditional' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -107,23 +108,30 @@ function component_s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'component_s_widgets_init' );
+add_action( 'widgets_init', 'theme_traditional_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function component_s_scripts() {
-	wp_enqueue_style( 'component_s-style', get_stylesheet_uri() );
+function theme_traditional_scripts() {
+	wp_enqueue_style( 'theme-modern-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'component_s-navigation', get_template_directory_uri() . 'assets/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'theme-modern', get_template_directory_uri() . '/assets/js/thememodern.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'component_s-skip-link-focus-fix', get_template_directory_uri() . 'assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'theme-modern-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
+
+	wp_enqueue_script( 'theme-modern-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	if ( wp_style_is( 'genericons', 'registered' ) )
+		wp_enqueue_style( 'genericons' );
+	else
+		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'component_s_scripts' );
+add_action( 'wp_enqueue_scripts', 'theme_traditional_scripts' );
 
 /**
  * Implement the Custom Header feature.
