@@ -11,6 +11,7 @@
 	<?php
 		if ( has_post_thumbnail() && ! post_password_required() ) :
 			$featuredimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thememodern-large' );
+		endif;
 	?>
 
 	<div class="entry-wrapper">
@@ -33,5 +34,3 @@
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->
-
-
