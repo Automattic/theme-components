@@ -37,17 +37,13 @@
 					) ); ?>
 				<?php endif; ?>
 
-			<?php if ( has_nav_menu( 'main' ) ) : ?>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-				</nav><!-- #site-navigation -->
-			<?php endif; ?>
+				<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
 
 
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) {
 				get_sidebar();
 			} ?>
-			</div>
+		</div><!-- .slide-panel -->
 		<?php endif; ?>
 		<?php if ( is_home() && is_front_page() ) : ?>
 			<?php if ( get_header_image() ) : ?>
