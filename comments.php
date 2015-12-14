@@ -28,7 +28,7 @@ if ( post_password_required() ) {
 
 		<?php get_template_part( 'components/comment-navigation-above/comment-navigation-above' ); ?>
 
-		<?php get_template_part( 'components/comment-list/comment-list' ?>
+		<?php get_template_part( 'components/comment-list/comment-list' ); ?>
 
 		<?php get_template_part( 'components/comment-navigation-below/comment-navigation-below' ); ?>
 
