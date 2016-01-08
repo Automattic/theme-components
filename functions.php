@@ -40,6 +40,8 @@ function component_s_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'theme-portfolio-portfolio-featured-image', 800, 9999 );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top Menu', 'component_s' ),

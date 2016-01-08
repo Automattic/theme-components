@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package component_s
+ * @package theme-portfolio
  */
 
 ?><!DOCTYPE html>
@@ -20,15 +20,38 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'component_s' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_traditional' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/branding/branding' ); ?>
+		<?php
+		// You can upload a custom header and it'll output in a smaller logo size.
+		$header_image = get_header_image();
 
-		<?php get_template_part( 'components/site-logo/site-logo' ); ?>
+		if ( ! empty( $header_image ) ) { ?>
+			<div id="header-image" class="custom-header">
+				<div class="header-wrapper">
+					<div class="site-branding">
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					</div><!-- .site-branding -->
+				</div><!-- .header-wrapper -->
+				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+			</div><!-- #header-image .custom-header -->
+		<?php } else { ?>
+			<div class="site-branding">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			</div><!-- .site-branding -->
+		<?php } ?>
+	</header><!-- #masthead -->
 
-		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
+	<?php theme_traditional_the_site_logo(); ?>
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme_traditional' ); ?></button>
+	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
 
