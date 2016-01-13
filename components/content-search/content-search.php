@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package theme-modern
+ * @package Components
  */
 
 ?>
@@ -16,7 +16,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php theme_traditional_posted_on(); ?>
+			<?php components_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -26,7 +26,7 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php theme_traditional_entry_footer(); ?>
+		<?php components_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->
