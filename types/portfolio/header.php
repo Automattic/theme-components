@@ -46,7 +46,7 @@
 		<?php } ?>
 	</header><!-- #masthead -->
 
-	<?php component_s_the_site_logo(); ?>
+	<?php components_the_site_logo(); ?>
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme_traditional' ); ?></button>
