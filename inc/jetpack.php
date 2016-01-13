@@ -16,6 +16,12 @@ function component_s_jetpack_setup() {
 		'render'    => 'component_s_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
+
+	/**
+	 * Add theme support for Portfolio Custom Post Type.
+	 */
+	add_theme_support( 'jetpack-portfolio' );
+
 } // end function component_s_jetpack_setup
 add_action( 'after_setup_theme', 'component_s_jetpack_setup' );
 
@@ -25,7 +31,7 @@ add_action( 'after_setup_theme', 'component_s_jetpack_setup' );
 function component_s_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
-		get_template_part( 'components/content', get_post_format() );
+		get_template_part( 'template-parts/content', get_post_format() );
 	}
 } // end function component_s_infinite_scroll_render
 
