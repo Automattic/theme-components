@@ -40,6 +40,9 @@ function component_s_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'component_s-hero', 1280, 1000, true );
+	add_image_size( 'component_s-thumbnail-avatar', 100, 100, true );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top Menu', 'component_s' ),
