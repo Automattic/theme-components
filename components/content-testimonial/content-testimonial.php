@@ -14,8 +14,8 @@
 	<?php the_title( '<header class="entry-header"><h2 class="entry-title">', '</h2></header>' ); ?>
 
 	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="post-thumbnail"><?php the_post_thumbnail( 'component_s-thumbnail-avatar' ); ?></div>
+		<div class="post-thumbnail"><?php the_post_thumbnail( 'components-thumbnail-avatar' ); ?></div>
 	<?php endif; ?>
 
-	<?php edit_post_link( __( 'Edit', 'component_s' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'components' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
