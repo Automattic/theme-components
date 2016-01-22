@@ -1,7 +1,7 @@
 <?php
 /* The template for displaying portfolio items
  * 
- * @package theme-portfolio
+ * @package Components
  */
  
 				if ( get_query_var( 'paged' ) ) :
