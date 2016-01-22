@@ -2,7 +2,7 @@
 /**
  * Template Name: Front Page
  *
- * @package theme-magazine
+ * @Package Components
  */
 get_header(); ?>
 

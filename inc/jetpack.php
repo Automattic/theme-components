@@ -3,14 +3,14 @@
  * Jetpack Compatibility File
  * See: https://jetpack.me/
  *
- * @package theme-magazine
+ * @Package Components
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: https://jetpack.me/support/infinite-scroll/
  *
- * @since theme-magazine 1.0
+ * @since Components 1.0
  */
 function theme_traditional_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
@@ -24,7 +24,7 @@ add_action( 'after_setup_theme', 'theme_traditional_jetpack_setup' );
 /**
  * Custom render function for Infinite Scroll.
  *
- * @since theme-magazine 1.0
+ * @since Components 1.0
  */
 function theme_traditional_infinite_scroll_render() {
 	while ( have_posts() ) {
@@ -36,18 +36,18 @@ function theme_traditional_infinite_scroll_render() {
 /**
  * Add support for the Site Logo
  *
- * @since theme-magazine 1.0
+ * @since Components 1.0
  */
 function theme_traditional_site_logo_init() {
-	add_image_size( 'theme-magazine-logo', 200, 200 );
-	add_theme_support( 'site-logo', array( 'size' => 'theme-magazine-logo' ) );
+	add_image_size( 'components-logo', 200, 200 );
+	add_theme_support( 'site-logo', array( 'size' => 'components-logo' ) );
 }
 add_action( 'after_setup_theme', 'theme_traditional_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
  *
- * @since theme-magazine 1.0
+ * @since Components 1.0
  */
 function theme_traditional_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
@@ -60,7 +60,7 @@ function theme_traditional_the_site_logo() {
 /**
 * Add theme support for Responsive Videos.
  *
- * @since theme-magazine 1.0
+ * @since Components 1.0
 */
 add_theme_support( 'jetpack-responsive-videos' );
 
