@@ -1,18 +1,18 @@
 <section class="error-404 not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'component_s' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'components' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'component_s' ); ?></p>
+		<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'components' ); ?></p>
 
 		<?php get_search_form(); ?>
 
 		<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-		<?php if ( component_s_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+		<?php if ( components_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 			<div class="widget widget_categories">
-				<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'component_s' ); ?></h2>
+				<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'components' ); ?></h2>
 				<ul>
 					<?php
 					wp_list_categories( array(
@@ -29,7 +29,7 @@
 
 		<?php
 			/* translators: %1$s: smiley */
-			$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'component_s' ), convert_smilies( ':)' ) ) . '</p>';
+			$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'components' ), convert_smilies( ':)' ) ) . '</p>';
 			the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 		?>
 

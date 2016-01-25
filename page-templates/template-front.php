@@ -2,7 +2,7 @@
 /**
  * Template Name: Front Page
  *
- * @package theme-business
+ * @package Components
  */
 get_header(); ?>
 
