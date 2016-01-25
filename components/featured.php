@@ -2,9 +2,9 @@
 /**
  * The template for displaying featured content
  *
- * @package theme-magazine
+ * @Package Components
  */
-$featured_posts = theme_magazine_get_featured_posts();
+$featured_posts = components_get_featured_posts();
 if ( empty( $featured_posts ) ) {
 	return;
 }

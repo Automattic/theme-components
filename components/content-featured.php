@@ -2,7 +2,7 @@
 /**
  * The template for displaying featured posts on the front page
  *
- * @package theme-magazine
+ * @Package Components
  */
 ?>
 
@@ -11,7 +11,7 @@
 	<?php
 		// Output the featured image.
 		if ( has_post_thumbnail() ) {
-			the_post_thumbnail( 'theme-magazine-thumbnail' );
+			the_post_thumbnail( 'components-thumbnail' );
 		}
 	?>
 	</a>
