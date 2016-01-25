@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package theme-modern
+ * @package Components
  */
 
 ?><!DOCTYPE html>
@@ -20,12 +20,12 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_traditional' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) || has_nav_menu( 'main' ) || has_nav_menu ( 'social' ) ) : ?>
-			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Show', 'coherent' ); ?></span><span class="action-text"><?php _e( 'Show', 'coherent' ); ?></span></button>
+			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Show', 'components' ); ?></span><span class="action-text"><?php _e( 'Show', 'coherent' ); ?></span></button>
 			<div class="slide-panel animated closed">
 				<?php if ( has_nav_menu ( 'social' ) ) : ?>
 					<?php wp_nav_menu( array(
@@ -63,7 +63,7 @@
 			<?php if ( get_header_image() ) : ?>
 			<?php endif; ?>
 		<?php endif; ?>
-		
+
 	</header><!-- #masthead -->
 </nav><!-- #site-navigation -->
 

@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package theme-modern
+ * @package Components
  */
 
 ?>
@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		if ( has_post_thumbnail() && ! post_password_required() ) :
-			$featuredimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'thememodern-large' );
+			$featuredimage = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'components-large' );
 	?>
 
 		<div class="feature-header" style="background-image: url(<?php echo esc_url( $featuredimage[0] ); ?>);">
@@ -22,12 +22,12 @@
 		</div>
 		<div class="entry-wrapper">
 			<div class="entry-meta">
-				<?php theme_traditional_posted_on(); ?>
+				<?php components_posted_on(); ?>
 			</div><!-- .entry-meta -->
 	<?php else : ?>
 	<div class="entry-wrapper">
 		<div class="entry-meta">
-			<?php theme_traditional_posted_on(); ?>
+			<?php components_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -39,14 +39,14 @@
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'theme_traditional' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'components' ),
 					'after'  => '</div>',
 				) );
 			?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php theme_traditional_entry_footer(); ?>
+			<?php components_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->
