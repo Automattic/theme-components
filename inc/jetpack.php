@@ -12,44 +12,44 @@
  *
  * @since Components 1.0
  */
-function theme_traditional_jetpack_setup() {
+function components_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'theme_traditional_infinite_scroll_render',
+		'render'    => 'components_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
-} // end function theme_traditional_jetpack_setup
-add_action( 'after_setup_theme', 'theme_traditional_jetpack_setup' );
+} // end function components_jetpack_setup
+add_action( 'after_setup_theme', 'components_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  *
  * @since Components 1.0
  */
-function theme_traditional_infinite_scroll_render() {
+function components_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		get_template_part( 'template-parts/content', get_post_format() );
 	}
-} // end function theme_traditional_infinite_scroll_render
+} // end function components_infinite_scroll_render
 
 /**
  * Add support for the Site Logo
  *
  * @since Components 1.0
  */
-function theme_traditional_site_logo_init() {
+function components_site_logo_init() {
 	add_image_size( 'components-logo', 200, 200 );
 	add_theme_support( 'site-logo', array( 'size' => 'components-logo' ) );
 }
-add_action( 'after_setup_theme', 'theme_traditional_site_logo_init' );
+add_action( 'after_setup_theme', 'components_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
  *
  * @since Components 1.0
  */
-function theme_traditional_the_site_logo() {
+function components_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
 		return;
 	} else {
@@ -67,13 +67,13 @@ add_theme_support( 'jetpack-responsive-videos' );
 /**
  * Featured Posts
  */
-function theme_magazine_has_multiple_featured_posts() {
-	$featured_posts = apply_filters( 'theme_magazine_get_featured_posts', array() );
+function components_has_multiple_featured_posts() {
+	$featured_posts = apply_filters( 'components_get_featured_posts', array() );
 	if ( is_array( $featured_posts ) && 1 < count( $featured_posts ) ) {
 		return true;
 	}
 	return false;
 }
-function theme_magazine_get_featured_posts() {
-	return apply_filters( 'theme_magazine_get_featured_posts', false );
+function components_get_featured_posts() {
+	return apply_filters( 'components_get_featured_posts', false );
 }
