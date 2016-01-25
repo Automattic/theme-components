@@ -11,33 +11,33 @@
 	</a>
 	<?php endif; // End header image check. ?>
  *
- * @package component_s
+ * @package Components
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses component_s_header_style()
+ * @uses components_header_style()
  */
-function component_s_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'component_s_custom_header_args', array(
+function components_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'components_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'component_s_header_style',
+		'wp-head-callback'       => 'components_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'component_s_custom_header_setup' );
+add_action( 'after_setup_theme', 'components_custom_header_setup' );
 
-if ( ! function_exists( 'component_s_header_style' ) ) :
+if ( ! function_exists( 'components_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see component_s_custom_header_setup().
+ * @see components_custom_header_setup().
  */
-function component_s_header_style() {
+function components_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -70,4 +70,4 @@ function component_s_header_style() {
 	</style>
 	<?php
 }
-endif; // component_s_header_style
+endif; // components_header_style
