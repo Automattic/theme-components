@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single projects.
  *
- * @package theme-portfolio
+ * @package Components
  */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'portfolio-single' ); ?>
+			<?php get_template_part( 'components/content', 'portfolio-single' ); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
@@ -21,7 +21,7 @@ get_header(); ?>
 				endif;
 			?>
 
-			<?php theme_portfolio_post_nav(); ?>
+			<?php the_post_navigation(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 

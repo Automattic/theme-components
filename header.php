@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package theme-portfolio
+ * @package Components
  */
 
 ?><!DOCTYPE html>
@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'theme_traditional' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
@@ -46,10 +46,10 @@
 		<?php } ?>
 	</header><!-- #masthead -->
 
-	<?php theme_traditional_the_site_logo(); ?>
+	<?php components_the_site_logo(); ?>
 
 	<nav id="site-navigation" class="main-navigation" role="navigation">
-	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme_traditional' ); ?></button>
+	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'components' ); ?></button>
 	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 </nav><!-- #site-navigation -->
 
