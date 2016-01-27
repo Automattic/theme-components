@@ -36,8 +36,8 @@ function components_infinite_scroll_render() {
  * @since components 1.0
  */
 function components_site_logo_init() {
-	add_image_size( 'component-s-logo', 200, 200 );
-	add_theme_support( 'site-logo', array( 'size' => 'component-s-logo' ) );
+	add_image_size( 'components-logo', 200, 200 );
+	add_theme_support( 'site-logo', array( 'size' => 'components-logo' ) );
 }
 add_action( 'after_setup_theme', 'components_site_logo_init' );
 
