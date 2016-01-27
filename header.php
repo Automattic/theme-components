@@ -25,7 +25,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) || has_nav_menu( 'main' ) || has_nav_menu ( 'social' ) ) : ?>
-			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Show', 'components' ); ?></span><span class="action-text"><?php _e( 'Show', 'coherent' ); ?></span></button>
+			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Show', 'components' ); ?></span><span class="action-text"><?php _e( 'Show', 'components' ); ?></span></button>
 			<div class="slide-panel animated closed">
 				<?php if ( has_nav_menu ( 'social' ) ) : ?>
 					<?php wp_nav_menu( array(
