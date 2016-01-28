@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'components_widgets_init' );
 function components_scripts() {
 	wp_enqueue_style( 'components-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'components', get_template_directory_uri() . '/assets/js/thememodern.js', array(), '20120206', true );
+	wp_enqueue_script( 'components-main', get_template_directory_uri() . '/assets/js/main.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'components-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
