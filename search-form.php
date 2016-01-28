@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms
  *
- * @Package Components
+ * @package Components
  */
 ?>
 

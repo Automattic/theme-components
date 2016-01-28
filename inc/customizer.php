@@ -2,7 +2,7 @@
 /**
  * components Theme Customizer
  *
- * @Package Components
+ * @package Components
  */
 
 /**

@@ -2,7 +2,7 @@
 /**
  * The template for displaying featured posts on the front page
  *
- * @Package Components
+ * @package Components
  */
 ?>
 

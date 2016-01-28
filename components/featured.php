@@ -2,7 +2,7 @@
 /**
  * The template for displaying featured content
  *
- * @Package Components
+ * @package Components
  */
 $featured_posts = components_get_featured_posts();
 if ( empty( $featured_posts ) ) {
