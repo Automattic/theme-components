@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @Package Components
+ * @package Components
  */
 
 ?>

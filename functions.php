@@ -2,7 +2,7 @@
 /**
  * components functions and definitions
  *
- * @Package Components
+ * @package Components
  */
 
 if ( ! function_exists( 'components_setup' ) ) :

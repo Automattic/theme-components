@@ -3,14 +3,12 @@
  * Jetpack Compatibility File
  * See: https://jetpack.me/
  *
- * @Package Components
+ * @package Components
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: https://jetpack.me/support/infinite-scroll/
- *
- * @since Components 1.0
  */
 function components_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
@@ -23,8 +21,6 @@ add_action( 'after_setup_theme', 'components_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
- *
- * @since Components 1.0
  */
 function components_infinite_scroll_render() {
 	while ( have_posts() ) {
@@ -35,8 +31,6 @@ function components_infinite_scroll_render() {
 
 /**
  * Add support for the Site Logo
- *
- * @since Components 1.0
  */
 function components_site_logo_init() {
 	add_image_size( 'components-logo', 200, 200 );
@@ -46,8 +40,6 @@ add_action( 'after_setup_theme', 'components_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
- *
- * @since Components 1.0
  */
 function components_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
@@ -59,8 +51,6 @@ function components_the_site_logo() {
 
 /**
 * Add theme support for Responsive Videos.
- *
- * @since Components 1.0
 */
 add_theme_support( 'jetpack-responsive-videos' );
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found).
  *
- * @Package Components
+ * @package Components
  */
 
 get_header(); ?>
