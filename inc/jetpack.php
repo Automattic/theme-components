@@ -38,8 +38,6 @@ function components_infinite_scroll_render() {
 
 /**
  * Add support for the Site Logo
- *
- * @since Components 1.0
  */
 function components_site_logo_init() {
 	add_image_size( 'component-s-logo', 200, 200 );
@@ -49,8 +47,6 @@ add_action( 'after_setup_theme', 'components_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
- *
- * @since Components 1.0
  */
 function components_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
