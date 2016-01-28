@@ -11,7 +11,7 @@
 	</a>
 	<?php endif; // End header image check. ?>
  *
- * @Package Components
+ * @package Components
  */
 
 /**

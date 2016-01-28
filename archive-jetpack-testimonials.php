@@ -2,7 +2,7 @@
 /**
  * The template for displaying the Testimonials archive page.
  *
- * @Package Components
+ * @package Components
  */
 
 get_header(); ?>
