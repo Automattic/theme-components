@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @Package Components
+ * @package Components
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) : ?>

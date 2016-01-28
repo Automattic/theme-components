@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @Package Components
+ * @package Components
  */
 
 ?>

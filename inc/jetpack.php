@@ -3,7 +3,7 @@
  * Jetpack Compatibility File
  * See: https://jetpack.me/
  *
- * @Package Components
+ * @package Components
  */
 
 /**
@@ -36,8 +36,6 @@ add_theme_support( 'jetpack-responsive-videos' );
 
 /**
  * Add support for the Site Logo
- *
- * @since components 1.0
  */
 function components_site_logo_init() {
 	add_image_size( 'component-s-logo', 200, 200 );
@@ -47,8 +45,6 @@ add_action( 'after_setup_theme', 'components_site_logo_init' );
 
 /**
  * Return early if Site Logo is not available.
- *
- * @since components 1.0
  */
 function components_the_site_logo() {
 	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
