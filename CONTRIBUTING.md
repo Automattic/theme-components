@@ -2,6 +2,21 @@
 
 Hey there! Thanks for wanting to contribute to Components—you rock!
 
+## Choosing the right repo
+
+Components is split into two repos. This repo is for the source code—all the
+files that go into making up our starter themes. The code for the generator that
+puts all these pieces together and builds a starter theme is in
+https://github.com/Automattic/components.underscores.me.
+
+If your issue is related to how your starter theme was built—if the name is
+wrong, or if you got an error in your download file, your issue is probably
+related to the [generator repo](https://github.com/Automattic/components.underscores.me).
+If your issue is with the theme code itself, it probably belongs here.
+
+If you're not entirely sure where your bug belongs, that's okay! Go ahead and
+file a bug, and we'll make sure it's in the right spot.
+
 ## Creating an issue
 
 If you find a bug or would like something added to the Components library, create a new issue! To create a new issue:
