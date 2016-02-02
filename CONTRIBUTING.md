@@ -80,53 +80,24 @@ project:
 
 ## Conventions of commit messages
 
-Adding files on repo
+The first line of your commit should be a short (fewer than 50 characters)
+summary of what your commit does. Commit messages should be capitalised and use
+the imperative mood: "fix bug", not "fixed bug" or "fixes bug."  
 
-```bash
-git commit -m "Add filename"
-```
+To add further information or context, enter a blank new line and start a new
+paragraph below, wrapping lines so they don't get too long.
 
-Updating files on repo
+To reference an issue in a commit message, include its issue number: `see #123`.
+To close an issue in a commit message, use a [keyword](https://help.github.com/articles/closing-issues-via-commit-messages/)
+: `fixes #123`.
 
-```bash
-git commit -m "Update filename, filename2, filename3"
-```
+Here's an example of a great commit message:
+`Improve widget performance by adding more weevils.
 
-Removing files on repo
-
-```bash
-git commit -m "Remove filename"
-```
-
-Renaming files on repo
-
-```bash
-git commit -m "Rename filename"
-```
-
-Fixing errors and issues on repo
-
-```bash
-git commit -m "Fixed #issuenumber Message about this fix"
-```
-
-Adding features on repo
-
-```bash
-git commit -m "Add Feature: nameoffeature Message about this feature"
-```
-
-Updating features on repo
-
-```bash
-git commit -m "Update Feature: nameoffeature Message about this update"
-```
-
-Removing features on repo
-
-```bash
-git commit -m "Remove Feature: nameoffeature Message about this"
-```
+This adds six extra weevils to our vermin stack, effectively freeing up some
+of our older, rustier-kneed widgets for glue manufacturing. Fixes #123.
+See also #666, #21.
+`
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
