@@ -1,10 +1,10 @@
 # Contributing
 
-Hey there! Thanks for wanting to contribute the Theme Pattern Library—you rock!
+Hey there! Thanks for wanting to contribute to Components—you rock!
 
 ## Creating an issue
 
-If you find a bug or would like something added to the library, create a new issue! To create a new issue:
+If you find a bug or would like something added to the Components library, create a new issue! To create a new issue:
 
 1. **Search** existing issues first to ensure your issue hasn't already been reported.
 2. **Create** the issue. If it's a bug, provide steps to recreate the issue. (Attaching a video or screenshot is a great way to visually show what you're seeing. If your issue is an enhancement, attach a mockup or sketch to explain your idea.
@@ -13,7 +13,7 @@ If you find a bug or would like something added to the library, create a new iss
 ## Feature requests
 
 Feature requests are welcome. Think about whether your idea
-fits with the [scope and aims of the project](https://github.com/Automattic/theme-pattern-library/wiki/History).
+fits with the [scope and aims of the project](https://github.com/Automattic/theme-components/wiki/History).
 It's up to *you* to make a strong case to convince the project's
 developers of the merits of this feature. Please provide as much
 detail and context as possible.
@@ -24,8 +24,8 @@ Good pull requests—patches, improvements, new features—are a great
 help. They should remain focused in scope and shouldn't contain unrelated
 commits.
 
-Please adhere to the coding conventions used throughout the project with 
-regard to indentation, accurate comments, etc. The pattern library follows
+Please adhere to the coding conventions used throughout the project with
+regard to indentation, accurate comments, etc. Components follows
 the [WordPress coding conventions](https://make.wordpress.org/core/handbook/best-practices/coding-standards/).
 
 Follow this process if you'd like your work considered for inclusion in the
@@ -36,11 +36,11 @@ project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/theme-pattern-library
+   git clone https://github.com/<your-username>/theme-components
    # Navigate to the newly cloned directory
-   cd theme-pattern-library
+   cd theme-components
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/Automattic/theme-pattern-library
+   git remote add upstream https://github.com/Automattic/theme-components
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
@@ -80,7 +80,7 @@ project:
 
 ## Conventions of commit messages
 
-Addding files on repo
+Adding files on repo
 
 ```bash
 git commit -m "Add filename"
