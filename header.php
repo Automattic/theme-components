@@ -28,7 +28,7 @@
 
 		<?php get_template_part( 'components/site-logo/site-logo' ); ?>
 
-		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
+		<?php get_template_part( 'components/primary-navigation/primary-navigation' ); ?>
 
 	</header><!-- #masthead -->
 
