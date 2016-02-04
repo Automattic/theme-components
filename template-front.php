@@ -2,7 +2,7 @@
 /**
  * Template Name: Front Page
  *
- * @package theme-portfolio
+ * @package Components
  */
 get_header(); ?>
 

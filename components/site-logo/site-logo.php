@@ -1,1 +1,1 @@
-<?php component_s_the_site_logo(); ?>
+<?php components_the_site_logo(); ?>
