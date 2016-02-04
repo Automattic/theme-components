@@ -1,15 +1,15 @@
-=== components ===
+=== Components ===
 
 Contributors: automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
-Tested up to: 4.2.2
+Tested up to: 4.4
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called Components.
+A custom starter theme called Components.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Hi. I'm a starter theme called Components. I'm a theme meant for hacking so don'
 
 = Does this theme support any plugins? =
 
-components includes support for Infinite Scroll in Jetpack.
+Components includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
 
@@ -34,5 +34,5 @@ components includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Based on Components http://components.underscores.me/, (C) 2015-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
