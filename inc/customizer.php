@@ -1,6 +1,6 @@
 <?php
 /**
- * components Theme Customizer
+ * Components Theme Customizer
  *
  * @package Components
  */
