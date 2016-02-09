@@ -44,7 +44,6 @@ function components_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top-menu' => esc_html__( 'Top Menu', 'components' ),
-		'social'  => __( 'Social Links Menu', 'components' ),
 	) );
 
 	/*
@@ -125,7 +124,7 @@ function components_scripts() {
 	if ( wp_style_is( 'genericons', 'registered' ) )
 		wp_enqueue_style( 'genericons' );
 	else
-		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), null );
+		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/fonts/genericons.css', array(), null );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

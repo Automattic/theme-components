@@ -1,159 +1,180 @@
-.social-links ul a:before {
-  font-family: "Genericons";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-decoration: none;
-  vertical-align: text-bottom;
-  -webkit-font-smoothing: antialiased;
+.social-navigation ul {
+	display: block;
+	margin: 0 0 1.5em;
+	padding: 0;
 }
 
-.social-links {
-  margin: 0 auto;
-  padding: 0;
-}
-.social-links ul {
-  list-style: none;
-  margin: 0 0 20px 0;
-  padding: 0;
-}
-.social-links ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 -2px 0 0;
-  padding: 0;
-}
-.social-links ul a {
-  background: $color__primary;
-  display: inline-block;
-  text-decoration: none;
-}
-.social-links ul a:before {
-  color: $color__white;
-  display: block;
-  font-size: 22px;
-  padding: 5px;
-  text-align: center;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-}
-.social-links ul a:hover {
-  background: $color__black;
-  color: $color__white;
-  text-decoration: none;
-}
-.social-links ul a:hover:before {
-  color: $color__white;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
+.social-navigation li {
+	display: inline-block;
+	margin: 0;
+	line-height: 1;
 }
 
-.social-links ul a[href*='wordpress.org']:before,
-.social-links ul a[href*='wordpress.com']:before {
-  content: '\f205';
+.social-navigation a {
+	border: 0;
+	height: 1em;
+	text-decoration: none;
+	width: 1em;
 }
 
-.social-links ul a[href*='facebook.com']:before {
-  content: '\f204';
+.social-navigation a:before {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	font-family: Genericons;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	height: 1em;
+	line-height: 1;
+	speak: none;
+	text-decoration: inherit;
+	vertical-align: top;
+	width: 1em;
 }
 
-.social-links ul a[href*='twitter.com']:before {
-  content: '\f202';
+/* Default */
+.social-navigation a:before {
+	content: "\f415";
 }
 
-.social-links ul a[href*='dribbble.com']:before {
-  content: '\f201';
+/* CodePen */
+.social-navigation a[href*="codepen.io"]:before {
+	content: "\f216";
 }
 
-.social-links ul a[href*='plus.google.com']:before {
-  content: '\f206';
+/* Digg */
+.social-navigation a[href*="digg.com"]:before {
+	content: "\f221";
 }
 
-.social-links ul a[href*='pinterest.com']:before {
-  content: '\f209';
+/* Dribbble */
+.social-navigation a[href*="dribbble.com"]:before {
+	content: "\f201";
 }
 
-.social-links ul a[href*='github.com']:before {
-  content: '\f200';
+/* Dropbox */
+.social-navigation a[href*="dropbox.com"]:before {
+	content: "\f225";
 }
 
-.social-links ul a[href*='tumblr.com']:before {
-  content: '\f214';
+/* Email */
+.social-navigation a[href*="mailto:"]:before {
+	content: "\f410";
 }
 
-.social-links ul a[href*='youtube.com']:before {
-  content: '\f213';
+/* Facebook */
+.social-navigation a[href*="facebook.com"]:before {
+	content: "\f203";
 }
 
-.social-links ul a[href*='flickr.com']:before {
-  content: '\f211';
+/* Flickr */
+.social-navigation a[href*="flickr.com"]:before {
+	content: "\f211";
 }
 
-.social-links ul a[href*='vimeo.com']:before {
-  content: '\f212';
+/* Foursquare */
+.social-navigation a[href*="foursquare.com"]:before {
+	content: "\f226";
 }
 
-.social-links ul a[href*='instagram.com']:before {
-  content: '\f215';
+/* GitHub */
+.social-navigation a[href*="github.com"]:before {
+	content: "\f200";
 }
 
-.social-links ul a[href*='codepen.io']:before {
-  content: '\f216';
+/* Google Plus */
+.social-navigation a[href*="plus.google.com"]:before {
+	content: "\f206";
 }
 
-.social-links ul a[href*='linkedin.com']:before {
-  content: '\f207';
+/* Instagram */
+.social-navigation a[href*="instagram.com"]:before {
+	content: "\f215";
 }
 
-.social-links ul a[href*='foursquare.com']:before {
-  content: '\f226';
+/* LinkedIn */
+.social-navigation a[href*="linkedin.com"]:before {
+	content: "\f208";
 }
 
-.social-links ul a[href*='reddit.com']:before {
-  content: '\f222';
+/* Path */
+.social-navigation a[href*="path.com"]:before {
+	content: "\f219";
 }
 
-.social-links ul a[href*='digg.com']:before {
-  content: '\f221';
+/* Pinterest */
+.social-navigation a[href*="pinterest.com"]:before {
+	content: "\f210";
 }
 
-.social-links ul a[href*='getpocket.com']:before {
-  content: '\f224';
+/* Pocket */
+.social-navigation a[href*="getpocket.com"]:before {
+	content: "\f224";
 }
 
-.social-links ul a[href*='path.com']:before {
-  content: '\f219';
+/* Polldaddy */
+.social-navigation a[href*="polldaddy.com"]:before {
+	content: "\f217";
 }
 
-.social-links ul a[href*='stumbleupon.com']:before {
-  content: '\f223';
+/* Reddit */
+.social-navigation a[href*="reddit.com"]:before {
+	content: "\f222";
 }
 
-.social-links ul a[href*='spotify.com']:before {
-  content: '\f515';
+/* RSS Feed */
+.social-navigation a[href$="/feed/"]:before {
+	content: "\f413";
 }
 
-.social-links ul a[href*='twitch.tv']:before {
-  content: '\f516';
+/* Skype */
+.social-navigation a[href*="skype:"]:before {
+	content: "\f220";
 }
 
-.social-links ul a[href*='dropbox.com']:before {
-  content: '\f225';
+/* Spotify */
+.social-navigation a[href*="spotify.com"]:before {
+	content: "\f515";
 }
 
-.social-links ul a[href*='/feed']:before {
-  content: '\f413';
+/* StumbleUpon */
+.social-navigation a[href*="stumbleupon.com"]:before {
+	content: "\f223";
 }
 
-.social-links ul a[href*='skype']:before {
-  content: '\f220';
+/* Tumblr */
+.social-navigation a[href*="tumblr.com"]:before {
+	content: "\f214";
 }
 
-.social-links ul a[href*='mailto']:before {
-  content: '\f410';
+/* Twitch */
+.social-navigation a[href*="twitch.tv"]:before {
+	content: "\f516";
 }
 
-.social-links ul a:before {
-  content: '\f415';
+/* Twitter */
+.social-navigation a[href*="twitter.com"]:before {
+	content: "\f202";
+}
+
+/* Vimeo */
+.social-navigation a[href*="vimeo.com"]:before {
+	content: "\f212";
+}
+
+/* Vine */
+.social-navigation a[href*="vine.co"]:before {
+	content: "\f517";
+}
+
+/* WordPress */
+.social-navigation a[href*="wordpress.com"]:before,
+.social-navigation a[href*="wordpress.org"]:before {
+	content: "\f205";
+}
+
+/* YouTube */
+.social-navigation a[href*="youtube.com"]:before {
+	content: "\f213";
 }
