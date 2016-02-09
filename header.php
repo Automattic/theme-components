@@ -31,7 +31,7 @@
 
 				<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
 				<?php endif; ?>
 
