@@ -6,4 +6,4 @@
  */
 ?>
 
-<?php get_template_part( 'components/search-form/search-form.php' ?>
+<?php get_template_part( 'components/search-form/search-form.php' ); ?>
