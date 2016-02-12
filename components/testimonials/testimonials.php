@@ -13,7 +13,7 @@
 		<div class="grid-row">
 		<?php
 			while ( $testimonials->have_posts() ) : $testimonials->the_post();
-				 get_template_part( 'components/content', 'testimonial' );
+				 get_template_part( 'components/content-testimonial/content', 'testimonial' );
 			endwhile;
 			wp_reset_postdata();
 		?>
