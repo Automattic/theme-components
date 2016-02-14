@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<?php get_template_part( 'components/content', 'hero' ); ?>
 
-	<?php if ( '' != $jetpack_options['page-content'] ) : // only display if content not empty ?>
+	<?php if ( '' !== $jetpack_options['page-content'] ) : // Only display if content not empty. ?>
 
 	<div class="content-wrapper">
 
@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="grid">
-						<?php get_template_part( 'components/content', 'testimonial' ); ?>
+						<?php get_template_part( 'components/content-testimonial/content', 'testimonial' ); ?>
 					</div><!-- .grid -->
 
 				<?php endwhile; ?>
