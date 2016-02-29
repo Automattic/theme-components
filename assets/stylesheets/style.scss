@@ -1,0 +1,138 @@
+/*
+Theme Name: components
+Theme URI: http://underscores.me/
+Author: Automattic
+Author URI: http://automattic.com/
+Description: Hi. I'm a starter theme called <code>components</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: components
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+components is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Accessibility
+# Alignments
+# Clearings
+# Typography
+# Forms
+# Buttons
+# Formatting
+# Lists
+# Tables
+# Navigation
+# Links
+# Layout
+	## Posts
+	## Pages
+# Comments
+# Widgets
+# Infinite scroll
+# Media
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables/variables-base";
+@import "mixins/mixins-base";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "shared/normalize";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "shared/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "shared/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "shared/clearings";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "shared/typography";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "shared/forms";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "shared/buttons";
+
+/*--------------------------------------------------------------
+# Formattings
+--------------------------------------------------------------*/
+@import "shared/formatting";
+
+/*--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------*/
+@import "shared/lists";
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+@import "shared/tables";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "sections/navigation";
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+@import "shared/links";
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+@import "shared/links";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+@import "sections/comments";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "sections/widgets";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "shared/infinitescroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "shared/media";

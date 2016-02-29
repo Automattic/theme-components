@@ -1,0 +1,26 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+// @import "content-sidebar";
+// @import "sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts
+--------------------------------------------------------------*/
+@import "posts";
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
+@import "pages";
