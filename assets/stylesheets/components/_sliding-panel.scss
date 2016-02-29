@@ -1,0 +1,106 @@
+button.menu-toggle {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  color: $color__black;
+  display: block;
+  padding: 10px 20px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 3;
+}
+
+body.admin-bar button.menu-toggle {
+  top: 45px;
+}
+.slide-panel {
+  background-color: $color__light-grey;
+  display: none;
+  overflow-x: hidden;
+  padding: 60px 10px 5px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.slide-panel.expanded {
+  display: block;
+}
+.slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
+  background-color: $color__mid-grey;
+  width: 5px;
+}
+.slide-panel::-webkit-scrollbar-thumb {
+  background: $color__mid-grey;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+.menu-toggle.toggle-on {
+  -webkit-animation-name: none;
+  animation-name: none;
+  z-index: 3;
+}
+.menu-toggle .genericon {
+  margin-right: 20px;
+}
+
+.slide-panel,
+.single .slide-panel {
+  -webkit-animation-name: slideInFull;
+  animation-name: slideInFull;
+  bottom: 0;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+  padding: 60px 0 0 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.action-text {
+  font-size: 1.115em;
+}
+.action-text:before {
+  content: "\f419";
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Genericons";
+  font-style: normal;
+  font-weight: 700;
+  font-variant: normal;
+  line-height: 1;
+  margin: 0 10px 0 0;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-transition: color .1s ease-in 0;
+  -webkit-transition: color .1s ease-in 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  speak: none;
+  vertical-align: top;
+}
+
+.toggle-on .action-text {
+  color: $color__black;
+}
+.toggle-on .action-text:before {
+  color: $color__black;
+  content: "\f405";
+  font-size: 22px;
+  line-height: 0.9;
+}
+
+.slide-panel.expanded,
+.single .slide-panel.expanded {
+  display: block;
+  -webkit-animation-name: slideOutFull;
+  animation-name: slideOutFull;
+}
