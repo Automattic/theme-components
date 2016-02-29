@@ -1,5 +1,5 @@
 Config file for blog-classic
-Theme uniqueness: 2 column blog
+Theme uniqueness: 1 column, sliding panel
 
 Replacement files:
 - header.php [ adds in sliding panel ]
