@@ -30,6 +30,12 @@ function components_jetpackcomponentsetup() {
 	// Add theme support for site logos
 	add_image_size( 'component-s-logo', 200, 200 );
 	add_theme_support( 'site-logo', array( 'size' => 'component-s-logo' ) );
+
+	add_theme_support( 'featured-content', array(
+    	'filter'     => 'components_get_featured_posts',
+    	'max_posts'  => 20,
+    	'post_types' => array( 'post', 'page' ),
+	) );
 }
 add_action( 'after_setup_theme', 'components_jetpack_setup' );
 
