@@ -1,0 +1,14 @@
+Config file for blog-classic
+Theme uniqueness: testimonials, front page
+
+Replacement files:
+- inc/jetpack [ testimonials ]
+- functions.php [ testimonial avatar and hero image ]
+
+Component files:
+- components/features/testimonials/archive-jetpack-testimonials.php [ needs to go to root ]
+- components/features/testimonials/content-testimonials.php
+- components/post/content-hero.php
+
+New files:
+- templates/frontpage-business.php
