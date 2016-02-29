@@ -1,0 +1,12 @@
+Config file for magazine
+Theme uniqueness: index page with featured content
+
+Replacement files:
+- index.php [ with featured content ]
+- inc/jetpack.php [ adds in featured content ]
+
+Component files:
+- components/content-featured.php
+- components/display-featured.php
+
+New files:
