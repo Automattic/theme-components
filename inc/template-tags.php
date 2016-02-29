@@ -12,12 +12,12 @@ if ( ! function_exists( 'components_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function components_posted_on() {
-	$timecomponentstring = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$timecomponentstring = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
-	$timecomponentstring = sprintf( $timecomponentstring,
+	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
 		esc_attr( get_the_modified_date( 'c' ) ),
@@ -26,7 +26,7 @@ function components_posted_on() {
 
 	$posted_on = sprintf(
 		esc_html_x( 'Posted on %s', 'post date', 'components' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $timecomponentstring . '</a>'
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
@@ -59,7 +59,7 @@ function components_entry_footer() {
 		}
 	}
 
-	if ( ! iscomponentsingle() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
 		comments_popup_link( esc_html__( 'Leave a comment', 'components' ), esc_html__( '1 Comment', 'components' ), esc_html__( '% Comments', 'components' ) );
 		echo '</span>';

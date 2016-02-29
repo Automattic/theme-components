@@ -25,13 +25,12 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<!-- components/header/site-branding.php -->
-		
-		<?php components_the_site_logo(); ?>
+		<!-- components/header/header-image.php -->
 
-		<!-- components/navigaiton/top-navigation.php -->
+		<?php components_the_site_logo(); ?>
 		
-		<?php components_social_menu(); ?>
+		<!-- components/navigaiton/top-navigation.php -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

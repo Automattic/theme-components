@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function components_wpcomcomponentsetup() {
+function components_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function components_wpcomcomponentsetup() {
 		);
 	}
 }
-add_action( 'aftercomponentsetup_theme', 'components_wpcomcomponentsetup' );
+add_action( 'after_setup_theme', 'components_wpcom_setup' );

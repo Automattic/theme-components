@@ -1,6 +1,7 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature.
+ * Sample implementation of the Custom Header feature
+ * http://codex.wordpress.org/Custom_Headers
  *
  * You can add an optional custom header image to header.php like so ...
  *
@@ -10,42 +11,38 @@
 	</a>
 	<?php endif; // End header image check. ?>
  *
- * @link https://developer.wordpress.org/themes/functionality/custom-headers/
- *
- * @package components
+ * @package Components
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses components_headercomponentstyle()
+ * @uses components_header_style()
  */
-function components_custom_headercomponentsetup() {
-	add_themecomponentsupport( 'custom-header', apply_filters( 'components_custom_header_args', array(
+function components_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'components_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'components_headercomponentstyle',
+		'wp-head-callback'       => 'components_header_style',
 	) ) );
 }
-add_action( 'aftercomponentsetup_theme', 'components_custom_headercomponentsetup' );
+add_action( 'after_setup_theme', 'components_custom_header_setup' );
 
-if ( ! function_exists( 'components_headercomponentstyle' ) ) :
+if ( ! function_exists( 'components_header_style' ) ) :
 /**
- * Styles the header image and text displayed on the blog.
+ * Styles the header image and text displayed on the blog
  *
- * @see components_custom_headercomponentsetup().
+ * @see components_custom_header_setup().
  */
-function components_headercomponentstyle() {
+function components_header_style() {
 	$header_text_color = get_header_textcolor();
 
-	/*
-	 * If no custom options for text are set, let's bail.
-	 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: HEADER_TEXTCOLOR.
-	 */
-	if ( HEADER_TEXTCOLOR === $header_text_color ) {
+	// If no custom options for text are set, let's bail
+	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value.
+	if ( HEADER_TEXTCOLOR == $header_text_color ) {
 		return;
 	}
 
@@ -54,7 +51,7 @@ function components_headercomponentstyle() {
 	<style type="text/css">
 	<?php
 		// Has the text been hidden?
-		if ( ! display_header_text() ) :
+		if ( 'blank' == $header_text_color ) :
 	?>
 		.site-title,
 		.site-description {
@@ -73,4 +70,4 @@ function components_headercomponentstyle() {
 	</style>
 	<?php
 }
-endif;
+endif; // components_header_style

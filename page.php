@@ -34,5 +34,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-getcomponentsidebar();
+get_sidebar();
 get_footer();
