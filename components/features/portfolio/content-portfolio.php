@@ -2,7 +2,7 @@
 /**
  * The template used for displaying projects on index view
  *
- * @package components
+ * @package Components
  */
 ?>
 

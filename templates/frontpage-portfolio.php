@@ -2,7 +2,7 @@
 /**
  * Template Name: Front Page
  *
- * @package components
+ * @package Components
  */
 get_header(); ?>
 

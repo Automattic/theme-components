@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package components
+ * @package Components
  */
 
 if ( ! function_exists( 'components_posted_on' ) ) :
