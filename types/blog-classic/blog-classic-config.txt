@@ -1,4 +1,4 @@
-Config file for blog-classic
+Config file for classic blog
 Theme uniqueness: 2 column blog
 
 Replacement files:

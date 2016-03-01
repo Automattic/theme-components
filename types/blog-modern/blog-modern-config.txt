@@ -1,4 +1,4 @@
-Config file for blog-classic
+Config file for modern blog
 Theme uniqueness: 1 column, sliding panel
 
 Replacement files:

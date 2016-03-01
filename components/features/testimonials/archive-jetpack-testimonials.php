@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<?php $jetpack_options = get_theme_mod( 'jetpack_testimonials' ); ?>
 
-	<?php get_template_part( 'components/content', 'hero' ); ?>
+	<?php get_template_part( 'components/post/content', 'hero' ); ?>
 
 	<?php if ( '' != $jetpack_options['page-content'] ) : // only display if content not empty ?>
 
@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="grid">
-						<?php get_template_part( 'components/content', 'testimonial' ); ?>
+						<?php get_template_part( 'components/features/testimonials/content', 'testimonial' ); ?>
 					</div><!-- .grid -->
 
 				<?php endwhile; ?>
