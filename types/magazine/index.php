@@ -13,6 +13,12 @@
  */
 
 get_header(); ?>
+	<?php
+		if ( is_home() ) {
+			// Include the featured content template.
+			get_template_part( 'components/features/featured-content/display', 'featured' );
+		}
+	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

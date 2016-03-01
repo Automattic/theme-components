@@ -43,6 +43,7 @@ function components_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'components-large', 2000, 1500, true );
+	
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top', 'components' ),

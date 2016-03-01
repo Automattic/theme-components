@@ -25,6 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	
 		<!-- components/header/header-image.php -->
 		
 		<?php components_the_site_logo(); ?>
@@ -32,6 +33,7 @@
 		<!-- components/navigaiton/top-navigation.php -->
 		
 		<?php components_social_menu(); ?>
+	
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

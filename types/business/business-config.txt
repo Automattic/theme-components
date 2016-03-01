@@ -1,4 +1,4 @@
-Config file for blog-classic
+Config file for business
 Theme uniqueness: testimonials, front page
 
 Replacement files:
