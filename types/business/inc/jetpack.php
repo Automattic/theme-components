@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package components
+ * @package Components
  */
 
 /**

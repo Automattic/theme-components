@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package components
+ * @package Components
  */
 
 if ( ! function_exists( 'components_setup' ) ) :

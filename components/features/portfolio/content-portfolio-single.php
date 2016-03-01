@@ -1,6 +1,6 @@
 <?php
 /**
- * @package components
+ * @package Components
  */
 
 // Access global variable directly to adjust the content width for portfolio single page

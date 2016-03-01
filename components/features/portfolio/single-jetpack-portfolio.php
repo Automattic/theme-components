@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single projects.
  *
- * @package components
+ * @package Components
  */
 
 get_header(); ?>

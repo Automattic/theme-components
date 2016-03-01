@@ -1,9 +1,9 @@
 <?php
 /* The template for displaying portfolio items
- * 
- * @package components
+ *
+ * @package Components
  */
- 
+
 				if ( get_query_var( 'paged' ) ) :
 					$paged = get_query_var( 'paged' );
 				elseif ( get_query_var( 'page' ) ) :
