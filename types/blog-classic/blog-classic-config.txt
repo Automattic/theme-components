@@ -7,7 +7,7 @@ Replacement files:
 - functions.php [ adds in custom header ]
 
 Sass:
-// @import "content-sidebar";
+- link in components/layout/content-sidebar";
 
 Component files:
 - header/header-image.php [ linked in header.php ]
