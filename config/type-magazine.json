@@ -1,0 +1,9 @@
+{
+  "replacement_files": [
+    "index.php",
+    "inc/jetpack.php"
+  ],
+  "components": [
+    "features/featured-content"
+  ]
+}
