@@ -1,0 +1,13 @@
+{
+	"replacement_files": [
+		"functions.php",
+		"inc/jetpack.php"
+	],
+	"components": [
+		"features/hero-image",
+		"features/testimonials"
+	],
+	"templates": [
+		"frontpage-business.php"
+	]
+}
