@@ -1,2 +1,22 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Vagrant
+.vagrant
+.vagrant/*
+
+# Sass
+#assets/stylesheets/.sass-cache/
+.sass-cache/
+*.css.map
+
+# CodeKit
 config.codekit
-assets/stylesheets/.sass-cache/
