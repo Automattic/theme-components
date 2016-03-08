@@ -2,8 +2,8 @@
 /**
  * The template for displaying search forms
  *
- * @package component_s
+ * @package Components
  */
 ?>
 
-<?php get_template_part( 'components/search-form/search-form.php' ?>
+<?php get_template_part( 'components/search-form/search-form.php' ); ?>
