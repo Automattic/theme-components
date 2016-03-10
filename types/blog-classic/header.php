@@ -29,7 +29,7 @@
 
 		<?php components_the_site_logo(); ?>
 		
-		<!-- components/navigaiton/top-navigation.php -->
+		<!-- components/navigation/navigation-top.php -->
 
 	</header><!-- #masthead -->
 
