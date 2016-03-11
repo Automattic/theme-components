@@ -20,7 +20,7 @@ function components_body_classes( $classes ) {
 	}
 
 	// Adds a class of hfeed to non-singular pages.
-	if ( ! iscomponentsingular() ) {
+	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
 
