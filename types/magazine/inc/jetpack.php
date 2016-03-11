@@ -13,7 +13,7 @@
  * See: https://jetpack.me/support/infinite-scroll/
  * See: https://jetpack.me/support/responsive-videos/
  */
-function components_jetpackcomponentsetup() {
+function components_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
@@ -28,8 +28,8 @@ function components_jetpackcomponentsetup() {
 	add_theme_support( 'jetpack-social-menu' );
 
 	// Add theme support for site logos
-	add_image_size( 'component-s-logo', 200, 200 );
-	add_theme_support( 'site-logo', array( 'size' => 'component-s-logo' ) );
+	add_image_size( 'components-logo', 200, 200 );
+	add_theme_support( 'site-logo', array( 'size' => 'components-logo' ) );
 
 	add_theme_support( 'featured-content', array(
 		'filter'	 => 'components_get_featured_posts',

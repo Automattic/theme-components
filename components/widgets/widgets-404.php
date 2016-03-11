@@ -1,5 +1,5 @@
-							<?php
-			getcomponentsearch_form();
+					<?php
+						get_search_form();
 
 						the_widget( 'WP_Widget_Recent_Posts' );
 
@@ -25,7 +25,7 @@
 						endif;
 
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'components' ), convertcomponentsmilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'components' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
 						the_widget( 'WP_Widget_Tag_Cloud' );

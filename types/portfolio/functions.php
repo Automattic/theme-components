@@ -43,7 +43,7 @@ function components_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'components-portfolio-featured-image', 800, 9999 );
-	
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top', 'components' ),
@@ -80,7 +80,7 @@ function components_setup() {
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'component_setup' );
+add_action( 'after_setup_theme', 'components_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
