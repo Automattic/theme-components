@@ -7,11 +7,11 @@
  * @package Components
  */
 
-if ( ! is_activecomponentsidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-	<?php dynamiccomponentsidebar( 'sidebar-1' ); ?>
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
