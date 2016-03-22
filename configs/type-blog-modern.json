@@ -16,6 +16,6 @@
 		"header/header-image"
 	],
 	"js": [
-		"blog-modern.js"
+		"main.js"
 	]
 }
