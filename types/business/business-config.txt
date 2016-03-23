@@ -6,7 +6,7 @@ Replacement files:
 - functions.php [ testimonial avatar and hero image ]
 
 Component files:
-- components/features/testimonials/archive-jetpack-testimonials.php [ needs to go to root ]
+- components/features/testimonials/archive-jetpack-testimonial.php [ needs to go to root ]
 - components/features/testimonials/content-testimonials.php
 - components/post/content-hero.php
 
