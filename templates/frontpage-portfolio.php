@@ -14,7 +14,7 @@ get_header(); ?>
 				<?php get_template_part( 'components/page/content', 'page' ); ?>
 			<?php endwhile; ?>
 
-			<?php get_template_part( 'components/feature/portfolio/portfolio' ); ?>
+			<?php get_template_part( 'components/features/portfolio/portfolio' ); ?>
 
 		</main>
 	</div>
