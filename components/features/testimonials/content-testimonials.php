@@ -2,7 +2,7 @@
 /**
  * The template used for displaying testimonials.
  *
- * @package Compenents
+ * @package Components
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
