@@ -17,5 +17,5 @@
 		<div class="post-thumbnail"><?php the_post_thumbnail( 'components-thumbnail-avatar' ); ?></div>
 	<?php endif; ?>
 
-	<?php edit_post_link( __( 'Edit', 'components' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( esc_html__( 'Edit', 'components' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->
