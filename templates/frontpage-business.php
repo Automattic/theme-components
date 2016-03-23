@@ -13,7 +13,7 @@ get_header(); ?>
 				<?php get_template_part( 'components/features/hero-image/content', 'hero' ); ?>
 			<?php endwhile; ?>
 
-			<?php get_template_part( 'components/features/testimonials/content', 'testimonials' ); ?>
+			<?php get_template_part( 'components/features/testimonials/testimonials' ); ?>
 		</main>
 	</div>
 
