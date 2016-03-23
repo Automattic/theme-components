@@ -9,7 +9,11 @@ get_header(); ?>
 
 	<?php $jetpack_options = get_theme_mod( 'jetpack_testimonials' ); ?>
 
-	<?php get_template_part( 'components/post/content', 'hero' ); ?>
+	<?php if ( isset( $jetpack_options['featured-image'] ) && '' != $jetpack_options['featured-image'] ) : ?>
+		<div class="components-hero">
+			<?php echo wp_get_attachment_image( (int)$jetpack_options['featured-image'], 'components-hero' ); ?>
+		</div><!-- .hero -->
+	<?php endif; ?>
 
 	<?php if ( '' != $jetpack_options['page-content'] ) : // only display if content not empty ?>
 
@@ -17,6 +21,17 @@ get_header(); ?>
 
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
+
+				<header class="entry-header">
+					<h1 class="entry-title">
+						<?php
+							if ( isset( $jetpack_options['page-title'] ) && '' != $jetpack_options['page-title'] )
+								echo esc_html( $jetpack_options['page-title'] );
+							else
+								esc_html_e( 'Testimonials', 'components' );
+						?>
+					</h1>
+				</header><!-- .entry-header -->
 
 				<article class="hentry">
 					<div class="entry-content">
