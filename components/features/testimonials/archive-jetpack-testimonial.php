@@ -54,7 +54,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="grid">
-						<?php get_template_part( 'components/features/testimonials/content', 'testimonial' ); ?>
+						<?php get_template_part( 'components/features/testimonials/content', 'testimonials' ); ?>
 					</div><!-- .grid -->
 
 				<?php endwhile; ?>
