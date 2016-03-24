@@ -119,6 +119,10 @@ function components_scripts() {
 	wp_enqueue_style( 'components-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'components-main', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '20120206', true );
+	wp_localize_script( 'components-main', 'menuToggleText', array(
+		'open'   => esc_html__( 'Open Sub-menu', 'components' ),
+		'close'  => esc_html__( 'Close Sub-menu', 'components' ),
+	) );
 
 	wp_enqueue_script( 'components-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
