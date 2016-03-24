@@ -17,8 +17,8 @@ function components_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'	=> 'components_infinite_scroll_render',
-		'footer'	=> 'page',
+		'render'    => 'components_infinite_scroll_render',
+		'footer'    => 'page',
 	) );
 
 	// Add theme support for Responsive Videos.
