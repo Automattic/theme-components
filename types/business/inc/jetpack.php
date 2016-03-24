@@ -62,9 +62,9 @@ function components_the_site_logo() {
 }
 
 function components_social_menu() {
-    if ( ! function_exists( 'jetpack_social_menu' ) ) {
-        return;
-    } else {
-        jetpack_social_menu();
-    }
+	if ( ! function_exists( 'jetpack_social_menu' ) ) {
+		return;
+	} else {
+		jetpack_social_menu();
+	}
 }
