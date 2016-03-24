@@ -42,6 +42,7 @@ function components_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'components-featured-image', 640, 9999 );
 	add_image_size( 'components-hero', 1280, 1000, true );
 	add_image_size( 'components-thumbnail-avatar', 100, 100, true );
 
