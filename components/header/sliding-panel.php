@@ -1,4 +1,4 @@
-<?php if ( is_active_sidebar( 'sidebar-1' ) || has_nav_menu( 'top-menu' ) || has_nav_menu ( 'social' ) ) : ?>
+<?php if ( is_active_sidebar( 'sidebar-1' ) || has_nav_menu( 'top-menu' ) || has_nav_menu( 'social' ) ) : ?>
 			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php esc_html_e( 'Show', 'components' ); ?></span><span class="action-text"><?php esc_html_e( 'Show', 'components' ); ?></span></button>
 			<div class="slide-panel animated closed">
 				<?php components_social_menu(); ?>
