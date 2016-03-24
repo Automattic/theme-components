@@ -15,11 +15,11 @@ if ( empty( $featured_posts ) ) {
 		<?php
 			foreach ( $featured_posts as $post ) {
 				setup_postdata( $post );
-	
+
 				 // Include the featured content template.
 				get_template_part( 'components/features/featured-content/content', 'featured' );
 			}
-	
+
 			wp_reset_postdata();
 		?>
 	</div><!-- .featured-content-inner -->
