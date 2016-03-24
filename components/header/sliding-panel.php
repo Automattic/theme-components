@@ -3,9 +3,9 @@
 			<div class="slide-panel animated closed">
 				<?php components_social_menu(); ?>
 
-				<?php if ( has_nav_menu( 'top-menu' ) ) : ?>
+				<?php if ( has_nav_menu( 'top' ) ) : ?>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'top' ) ); ?>
 					</nav><!-- #site-navigation -->
 				<?php endif; ?>
 
