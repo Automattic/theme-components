@@ -1,6 +1,6 @@
 <?php
 /**
- * components functions and definitions.
+ * Components functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
