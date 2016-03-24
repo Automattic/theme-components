@@ -24,29 +24,12 @@ body.admin-bar button.menu-toggle {
 	display: block;
 }
 
-.slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
-	width: 5px;
-}
-
-.slide-panel::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-}
-
-.menu-toggle {
-	-webkit-animation-name: none;
-	animation-name: none;
-}
-
 .menu-toggle.toggle-on {
-	-webkit-animation-name: none;
-	animation-name: none;
 	z-index: 3;
 }
 
 .slide-panel,
 .single .slide-panel {
-	-webkit-animation-name: slideInFull;
-	animation-name: slideInFull;
 	bottom: 0;
 	height: 100%;
 	display: none;
@@ -60,6 +43,4 @@ body.admin-bar button.menu-toggle {
 .slide-panel.expanded,
 .single .slide-panel.expanded {
 	display: block;
-	-webkit-animation-name: slideOutFull;
-	animation-name: slideOutFull;
 }
