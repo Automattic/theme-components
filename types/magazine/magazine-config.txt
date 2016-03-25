@@ -3,6 +3,7 @@ Theme uniqueness: index page with featured content
 
 Replacement files:
 - index.php [ with featured content ]
+- functions.php [ adds in image size for featured content ]
 - inc/jetpack.php [ adds in featured content ]
 
 Component files:
