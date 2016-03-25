@@ -8,7 +8,9 @@
 		"navigation/navigation-top",
 		"features/hero-image",
 		"features/testimonials",
-		"footer/site-info"
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
 	],
 	"templates": [
 		"frontpage-business.php"

@@ -16,3 +16,5 @@ assets/js/blog-modern.js
 Component files:
 - header/header-image.php [ linked in header.php ]
 - footer/site-info.php [ linked in footer.php ]
+- post/content-footer.php [ linked in content.php ]
+- post/content-meta.php [ linked in content.php ]

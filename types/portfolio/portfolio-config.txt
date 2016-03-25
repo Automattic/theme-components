@@ -15,6 +15,8 @@ Component files:
 - features/portfolio/portfolio.php
 - features/portfolio/single-jetpack-portfolio.php
 - footer/site-info.php [ linked in footer.php ]
+- post/content-footer.php [ linked in content.php ]
+- post/content-meta.php [ linked in content.php ]
 
 New files:
 - templates/frontpage-portfolio.php

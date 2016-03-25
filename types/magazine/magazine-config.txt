@@ -10,5 +10,7 @@ Component files:
 - features/featured-content/content-featured.php
 - features/featured-content/display-featured.php
 - footer/site-info.php [ linked in footer.php ]
+- post/content-footer.php [ linked in content.php ]
+- post/content-meta.php [ linked in content.php ]
 
 New files:

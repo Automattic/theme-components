@@ -14,7 +14,9 @@
 	],
 	"components": [
 		"header/header-image",
-		"footer/site-info"
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
 	],
 	"js": [
 		"main.js"

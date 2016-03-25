@@ -12,7 +12,9 @@ Component files:
 - footer/site-info.php [ linked in footer.php ]
 - header/site-branding.php
 - navigation/navigation-top.php
+- post/content-footer.php [ linked in content.php ]
 - post/content-hero.php
+- post/content-meta.php [ linked in content.php ]
 
 New files:
 - templates/frontpage-business.php
