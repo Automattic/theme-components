@@ -6,8 +6,11 @@ Replacement files:
 - functions.php [ testimonial avatar and hero image ]
 
 Component files:
+- components/header/site-branding.php
+- components/features/hero-image.php
 - components/features/testimonials/archive-jetpack-testimonial.php [ needs to go to root ]
 - components/features/testimonials/content-testimonials.php
+- components/navigation/navigation-top.php
 - components/post/content-hero.php
 
 New files:
