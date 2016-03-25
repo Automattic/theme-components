@@ -9,7 +9,8 @@
 		"style.scss"
 	],
 	"components": [
-		"features/portfolio"
+		"features/portfolio",
+		"footer/site-info"
 	],
 	"templates": [
 		"frontpage-portfolio.php"

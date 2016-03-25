@@ -7,7 +7,8 @@
 		"header/site-branding",
 		"navigation/navigation-top",
 		"features/hero-image",
-		"features/testimonials"
+		"features/testimonials",
+		"footer/site-info"
 	],
 	"templates": [
 		"frontpage-business.php"

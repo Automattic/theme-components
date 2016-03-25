@@ -7,7 +7,8 @@ Replacement files:
 - inc/jetpack.php [ adds in featured content ]
 
 Component files:
-- components/content-featured.php
-- components/display-featured.php
+- features/featured-content/content-featured.php
+- features/featured-content/display-featured.php
+- footer/site-info.php [ linked in footer.php ]
 
 New files:

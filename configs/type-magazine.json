@@ -5,6 +5,7 @@
 		"inc/jetpack.php"
 	],
 	"components": [
-		"features/featured-content"
+		"features/featured-content",
+		"footer/site-info"
 	]
 }

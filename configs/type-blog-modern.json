@@ -13,7 +13,8 @@
 		"style.scss"
 	],
 	"components": [
-		"header/header-image"
+		"header/header-image",
+		"footer/site-info"
 	],
 	"js": [
 		"main.js"

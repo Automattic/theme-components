@@ -11,3 +11,4 @@ Sass:
 
 Component files:
 - header/header-image.php [ linked in header.php ]
+- footer/site-info.php [ linked in footer.php ]
