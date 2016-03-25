@@ -1,5 +1,6 @@
 {
 	"replacement_files": [
+		"functions.php",
 		"index.php",
 		"inc/jetpack.php"
 	],
