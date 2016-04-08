@@ -1,0 +1,20 @@
+Config file for business
+Theme uniqueness: testimonials, front page
+
+Replacement files:
+- inc/jetpack [ testimonials ]
+- functions.php [ testimonial avatar and hero image ]
+
+Component files:
+- features/hero-image.php
+- features/testimonials/archive-jetpack-testimonial.php [ needs to go to root ]
+- features/testimonials/content-testimonials.php
+- footer/site-info.php [ linked in footer.php ]
+- header/site-branding.php
+- navigation/navigation-top.php
+- post/content-footer.php [ linked in content.php ]
+- post/content-hero.php
+- post/content-meta.php [ linked in content.php ]
+
+New files:
+- templates/frontpage-business.php

@@ -1,0 +1,20 @@
+{
+	"replacement_files": [
+		"header.php",
+		"functions.php",
+		"inc/jetpack.php"
+	],
+	"sass_replace": [
+		"_components.scss",
+		"style.scss"
+	],
+	"components": [
+		"features/portfolio",
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
+	],
+	"templates": [
+		"frontpage-portfolio.php"
+	]
+}

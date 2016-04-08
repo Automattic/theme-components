@@ -1,0 +1,16 @@
+Config file for classic blog
+Theme uniqueness: 2 column blog
+
+Replacement files:
+- header.php [ removes social menu, adds in header image ]
+- sidebar.php [ adds in social menu ]
+- functions.php [ adds in custom header ]
+
+Sass:
+- link in components/layout/content-sidebar";
+
+Component files:
+- header/header-image.php [ linked in header.php ]
+- footer/site-info.php [ linked in footer.php ]
+- post/content-footer.php [ linked in content.php ]
+- post/content-meta.php [ linked in content.php ]

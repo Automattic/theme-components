@@ -1,0 +1,20 @@
+Config file for modern blog
+Theme uniqueness: 1 column, sliding panel
+
+Replacement files:
+- header.php [ adds in sliding panel ]
+- functions.php [ adds in js file]
+- archive.php index.php search.php page.php single.php [ remove sidebar ]
+
+Sass:
+- link in components/sliding-panel.scss
+- link in components/header-fullscreen-image.scss
+
+JS:
+assets/js/blog-modern.js
+
+Component files:
+- header/header-image.php [ linked in header.php ]
+- footer/site-info.php [ linked in footer.php ]
+- post/content-footer.php [ linked in content.php ]
+- post/content-meta.php [ linked in content.php ]
