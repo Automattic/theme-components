@@ -2,7 +2,7 @@
 Theme Name: Components
 Theme URI: http://components.underscores.me/
 Author: Automattic
-Author URI: http://components.underscores.me/
+Author URI: http://automattic.com/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -13,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Components is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+components is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -23,23 +23,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
 # Accessibility
 # Alignments
 # Clearings
+# Typography
+# Forms
+# Buttons
+# Formatting
+# Lists
+# Tables
+# Navigation
+# Links
+# Layout
+	## Posts
+	## Pages
+# Comments
 # Widgets
-# Content
-    ## Posts and pages
-	## Asides
-	## Comments
 # Infinite scroll
 # Media
-	## Captions
 	## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -262,6 +263,94 @@ th {
 }
 
 /*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -328,25 +417,6 @@ big {
   font-size: 125%;
 }
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit;
-}
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-}
-
 blockquote, q {
   quotes: "" "";
 }
@@ -354,48 +424,72 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em;
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
 }
 
-ul, ol {
-  margin: 0 0 1.5em 3em;
+select {
+  border: 1px solid #ccc;
 }
 
-ul {
-  list-style: disc;
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+  padding: 3px;
 }
 
-ol {
-  list-style: decimal;
-}
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin: 0 1.5em 1.5em;
-}
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */
-}
-
-table {
-  margin: 0 0 1.5em;
+textarea {
+  padding-left: 3px;
   width: 100%;
 }
 
@@ -436,62 +530,55 @@ input[type="submit"]:focus {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  color: #111;
+/*--------------------------------------------------------------
+# Formattings
+--------------------------------------------------------------*/
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px;
+/*--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------*/
+ul, ol {
+  margin: 0 0 1.5em 3em;
 }
 
-textarea {
-  padding-left: 3px;
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+table {
+  margin: 0 0 1.5em;
   width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-  color: royalblue;
-}
-a:visited {
-  color: purple;
-}
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
-}
-
-/*--------------------------------------------------------------
-## Menus
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
@@ -572,129 +659,64 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Accessibility
+# Links
 --------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+a {
+  color: royalblue;
 }
-.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */
+a:visited {
+  color: purple;
+}
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
 }
 
 /*--------------------------------------------------------------
-# Alignments
+# Links
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em;
+a {
+  color: royalblue;
 }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em;
+a:visited {
+  color: purple;
 }
-
-.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
 }
 
 /*--------------------------------------------------------------
-# Clearings
+# Layout
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-  content: "";
-  display: table;
-  table-layout: fixed;
+html {
+  box-sizing: border-box;
 }
 
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-  clear: both;
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
 }
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */
-}
-.widget select {
-  max-width: 100%;
-}
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none;
-}
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-.content-area {
-  float: left;
-  margin: 0 -25% 0 0;
-  width: 100%;
-}
-
-.site-main {
-  margin: 0 25% 0 0;
-}
-
-.site-content .widget-area {
-  float: right;
-  overflow: hidden;
-  width: 25%;
-}
-
-.site-footer {
-  clear: both;
-  width: 100%;
-}
-
-/*--------------------------------------------------------------
-## Posts and pages
+## Posts
 --------------------------------------------------------------*/
 .sticky {
   display: block;
@@ -720,21 +742,21 @@ a:hover, a:active {
   margin: 1.5em 0 0;
 }
 
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-
-/*--------------------------------------------------------------
-## Asides
---------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
 }
 
 /*--------------------------------------------------------------
-## Comments
+## Pages
+--------------------------------------------------------------*/
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Comments
 --------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word;
@@ -742,6 +764,17 @@ a:hover, a:active {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+.widget select {
+  max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -762,6 +795,13 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -778,9 +818,6 @@ object {
   max-width: 100%;
 }
 
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;

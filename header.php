@@ -2,7 +2,9 @@
 /**
  * The header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="content">
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Components
  */
@@ -19,16 +21,18 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/branding/branding' ); ?>
+		<!-- components/header/site-branding.php -->
 
-		<?php get_template_part( 'components/site-logo/site-logo' ); ?>
+		<?php components_the_site_logo(); ?>
 
-		<?php get_template_part( 'components/top-navigation/top-navigation' ); ?>
+		<!-- components/navigation/navigation-top.php -->
+
+		<?php components_social_menu(); ?>
 
 	</header><!-- #masthead -->
 

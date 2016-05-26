@@ -1,0 +1,48 @@
+@import "navigation-vertical";
+
+button.menu-toggle {
+  display: block;
+	position: absolute;
+	left: auto;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+
+body.admin-bar button.menu-toggle {
+	top: 45px;
+}
+
+.slide-panel {
+	display: none;
+	overflow-x: hidden;
+	padding: 60px 10px 5px;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+
+.slide-panel.expanded {
+	display: block;
+}
+
+.menu-toggle.toggle-on {
+	z-index: 3;
+}
+
+.slide-panel,
+.single .slide-panel {
+	bottom: 0;
+	height: 100%;
+	display: none;
+	overflow-y: scroll;
+	padding: 60px 0 0 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
+.slide-panel.expanded,
+.single .slide-panel.expanded {
+	display: block;
+}

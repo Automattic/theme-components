@@ -1,0 +1,16 @@
+{
+	"replacement_files": [
+		"header.php",
+		"functions.php",
+		"sidebar.php"
+	],
+	"sass_replace": [
+		"layout/_content-sidebar.scss"
+	],
+	"components": [
+		"header/header-image",
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
+	]
+}

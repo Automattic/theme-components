@@ -1,0 +1,15 @@
+{
+	"replacement_files": [
+		"functions.php",
+		"index.php",
+		"inc/jetpack.php"
+	],
+	"components": [
+		"header/site-branding",
+		"navigation/navigation-top",
+		"features/featured-content",
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
+	]
+}

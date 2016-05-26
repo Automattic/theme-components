@@ -1,0 +1,24 @@
+{
+	"replacement_files": [
+		"header.php",
+		"functions.php",
+		"archive.php",
+		"index.php",
+		"page.php",
+		"search.php",
+		"single.php"
+	],
+	"sass_replace": [
+		"_components.scss",
+		"style.scss"
+	],
+	"components": [
+		"header/header-image",
+		"footer/site-info",
+		"post/content-footer",
+		"post/content-meta"
+	],
+	"js": [
+		"main.js"
+	]
+}

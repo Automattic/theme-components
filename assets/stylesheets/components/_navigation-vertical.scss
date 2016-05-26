@@ -1,0 +1,27 @@
+.main-navigation {
+	li,
+	ul ul {
+		float: none;
+	}
+
+	ul ul {
+		box-shadow: none;
+		height: 0;
+		overflow: hidden;
+		top: auto;
+	}
+
+	ul li:hover > ul,
+	ul li.focus > ul,
+	ul ul li:hover > ul,
+	ul ul li.focus > ul {
+		left: auto;
+	}
+
+	ul.sub-on {
+		height: auto;
+		left: auto;
+		margin-left: 2em;
+		position: relative;
+	}
+}

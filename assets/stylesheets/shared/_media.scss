@@ -1,3 +1,8 @@
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -14,9 +19,6 @@ object {
 	max-width: 100%;
 }
 
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
@@ -37,4 +39,4 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-@import "../../../components/gallery/gallery";
+@import "galleries";

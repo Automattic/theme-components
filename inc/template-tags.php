@@ -45,7 +45,7 @@ if ( ! function_exists( 'components_entry_footer' ) ) :
  */
 function components_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' == get_post_type() ) {
+	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'components' ) );
 		if ( $categories_list && components_categorized_blog() ) {
@@ -65,7 +65,15 @@ function components_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'components' ), '<span class="edit-link">', '</span>' );
+	edit_post_link(
+		sprintf(
+			/* translators: %s: Name of current post */
+			esc_html__( 'Edit %s', 'components' ),
+			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+		),
+		'<span class="edit-link">',
+		'</span>'
+	);
 }
 endif;
 
@@ -80,7 +88,6 @@ function components_categorized_blog() {
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
 			'hide_empty' => 1,
-
 			// We only need to know if there is more than one category.
 			'number'     => 2,
 		) );
