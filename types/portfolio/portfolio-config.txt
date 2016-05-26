@@ -19,4 +19,4 @@ Component files:
 - post/content-meta.php [ linked in content.php ]
 
 New files:
-- templates/frontpage-portfolio.php
+- templates/portfolio-front-page.php

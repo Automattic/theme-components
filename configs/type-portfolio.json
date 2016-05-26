@@ -15,6 +15,6 @@
 		"post/content-meta"
 	],
 	"templates": [
-		"frontpage-portfolio.php"
+		"portfolio-front-page.php"
 	]
 }

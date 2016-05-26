@@ -13,6 +13,6 @@
 		"post/content-meta"
 	],
 	"templates": [
-		"frontpage-business.php"
+		"business-front-page.php"
 	]
 }
