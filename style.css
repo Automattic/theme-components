@@ -629,6 +629,12 @@ table {
   display: block;
 }
 
+.menu-toggle:before {
+  content: "\2630";
+  display: inline-block;
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
