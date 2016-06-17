@@ -27,9 +27,6 @@ function components_jetpack_setup() {
 	// Add theme support for Social Menus
 	add_theme_support( 'jetpack-social-menu' );
 
-	// Add theme support for site logos
-	add_image_size( 'components-logo', 200, 200 );
-	add_theme_support( 'site-logo', array( 'size' => 'components-logo' ) );
 }
 add_action( 'after_setup_theme', 'components_jetpack_setup' );
 
@@ -44,17 +41,6 @@ function components_infinite_scroll_render() {
 		else :
 			get_template_part( 'components/post/content', get_post_format() );
 		endif;
-	}
-}
-
-/**
- * Return early if Site Logo is not available.
- */
-function components_the_site_logo() {
-	if ( ! function_exists( 'jetpack_the_site_logo' ) ) {
-		return;
-	} else {
-		jetpack_the_site_logo();
 	}
 }
 
