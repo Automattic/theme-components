@@ -50,7 +50,7 @@ function components_setup() {
 		) );
 
 	/**
-	 * Add support for core custom logo
+	 * Add support for core custom logo.
 	 */
 	add_theme_support( 'custom-logo', array(
 		'height'      => 200,
