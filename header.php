@@ -28,7 +28,7 @@
 
 		<!-- components/header/site-branding.php -->
 
-		<?php components_the_site_logo(); ?>
+		<?php components_the_custom_logo(); ?>
 
 		<!-- components/navigation/navigation-top.php -->
 
