@@ -51,6 +51,16 @@ function components_setup() {
 		'top' => esc_html__( 'Top', 'components' ),
 	) );
 
+	/**
+	 * Add support for core custom logo.
+	 */
+	add_theme_support( 'custom-logo', array(
+		'height'      => 200,
+		'width'       => 200,
+		'flex-width'  => true,
+		'flex-height' => true,
+	) );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -95,6 +105,19 @@ function components_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'components_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'components_content_width', 0 );
+
+/**
+ * Return early if Custom Logos are not available.
+ *
+ * @todo Remove after WP 4.7
+ */
+function components_the_custom_logo() {
+	if ( ! function_exists( 'the_custom_logo' ) ) {
+		return;
+	} else {
+		the_custom_logo();
+	}
+}
 
 /**
  * Register widget area.
