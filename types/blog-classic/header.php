@@ -27,8 +27,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<!-- components/header/header-image.php -->
 
-		<?php components_the_site_logo(); ?>
-		
+		<?php components_the_custom_logo(); ?>
+
 		<!-- components/navigation/navigation-top.php -->
 
 	</header><!-- #masthead -->
