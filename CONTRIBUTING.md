@@ -1,6 +1,6 @@
 # Contributing
 
-Hey there! Thanks for wanting to contribute to Components—you rock!
+Hey there! Thanks for your interest in contributing to Components—you rock!
 
 ## Choosing the right repo
 
