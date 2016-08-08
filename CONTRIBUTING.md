@@ -110,8 +110,8 @@ Here's an example of a great commit message:
 `Improve widget performance by adding more weevils`.
 
 This adds six extra weevils to our vermin stack, effectively freeing up some
-of our older, rustier-kneed widgets for glue manufacturing. Fixes #123.
-See also #666, #21.
+of our older, rustier-kneed widgets for glue manufacturing. `Fixes #123.
+See also #666, #21`.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
