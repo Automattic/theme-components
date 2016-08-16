@@ -1,0 +1,17 @@
+.content-area {
+	float: right;
+	margin: 0 0 0 (-$size_site-sidebar*2);
+	width: $size_site-main;
+}
+.site-main {
+	margin: 0 0 0 ($size_site-sidebar*2);
+}
+.site-content .widget-area {
+	float: left;
+	overflow: hidden;
+	width: $size_site-sidebar;
+}
+.site-footer {
+	clear: both;
+	width: $size_site-main;
+}

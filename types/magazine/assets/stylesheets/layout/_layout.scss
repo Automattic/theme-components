@@ -12,22 +12,9 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
-@import "content-sidebar";
-// @import "sidebar-content";
-
-
-/*--------------------------------------------------------------
-## Single Column / No Active Sidebar
---------------------------------------------------------------*/
-.no-sidebar .site-main {
-  margin: 0;
-}
-
-.no-sidebar .content-area {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-}
+// @import "sidebar-content-sidebar";
+// @import "sidebar-sidebar-content";
+@import "content-sidebar-sidebar";
 
 /*--------------------------------------------------------------
 ## Posts

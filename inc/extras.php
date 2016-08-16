@@ -23,6 +23,11 @@ function components_body_classes( $classes ) {
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
+	
+	// Add a class of no-sidebar when there is no sidebar present
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'no-sidebar';
+	}
 
 	return $classes;
 }

@@ -25,12 +25,12 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'components' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-	
+
 		<!-- components/header/sliding-panel.php -->
 
 		<!-- components/header/header-fullscreen-image.php -->
-		
-		<?php components_the_site_logo(); ?>
+
+		<?php components_the_custom_logo(); ?>
 
 	</header><!-- #masthead -->
 
