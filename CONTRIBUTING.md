@@ -22,7 +22,7 @@ file a bug, and we'll make sure it's in the right spot.
 If you find a bug or would like something added to the Components library, create a new issue! To create a new issue:
 
 1. **Search** existing issues first to ensure your issue hasn't already been reported.
-2. **Create** the issue. If it's a bug, provide steps to recreate the issue. (Attaching a video or screenshot is a great way to visually show what you're seeing. If your issue is an enhancement, attach a mockup or sketch to explain your idea.
+2. **Create** the issue. If it's a bug, provide steps to recreate the issue. (Attaching a video or screenshot is a great way to visually show what you're seeing.) If your issue is an enhancement, attach a mockup or sketch to explain your idea.
 3. **Pull Request** If you have found a bug and can fix it, attach a pull request to your issue! See below for more details on submitting PRs.
 
 ## Feature requests
