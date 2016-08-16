@@ -117,4 +117,4 @@ See also #666, #21.
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
 
-Thanks for helping make the theme pattern library better!
+Thanks for helping make Components better!
