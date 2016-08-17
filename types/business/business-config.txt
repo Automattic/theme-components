@@ -17,4 +17,4 @@ Component files:
 - post/content-meta.php [ linked in content.php ]
 
 New files:
-- templates/frontpage-business.php
+- front-page.php

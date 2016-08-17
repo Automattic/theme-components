@@ -2,7 +2,8 @@
 	"replacement_files": [
 		"header.php",
 		"functions.php",
-		"inc/jetpack.php"
+		"inc/jetpack.php",
+		"front-page.php"
 	],
 	"sass_replace": [
 		"_components.scss",
@@ -13,8 +14,5 @@
 		"footer/site-info",
 		"post/content-footer",
 		"post/content-meta"
-	],
-	"templates": [
-		"frontpage-portfolio.php"
 	]
 }

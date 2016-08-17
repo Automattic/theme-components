@@ -1,7 +1,8 @@
 {
 	"replacement_files": [
 		"functions.php",
-		"inc/jetpack.php"
+		"inc/jetpack.php",
+		"front-page.php"
 	],
 	"components": [
 		"header/site-branding",
@@ -11,8 +12,5 @@
 		"footer/site-info",
 		"post/content-footer",
 		"post/content-meta"
-	],
-	"templates": [
-		"frontpage-business.php"
 	]
 }

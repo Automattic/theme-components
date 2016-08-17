@@ -1,9 +1,16 @@
 <?php
 /**
- * Template Name: Front Page
+ * The static front page template
  *
  * @package Components
  */
+
+if ( 'posts' == get_option( 'show_on_front' ) ) :
+
+	get_template_part( 'index' );
+
+else :
+
 get_header(); ?>
 
 
