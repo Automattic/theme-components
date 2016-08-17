@@ -1,8 +1,19 @@
 {
 	"replacement_files": [
+		"archive.php",
 		"functions.php",
 		"index.php",
+		"page.php",
+		"search.php",
+		"sidebar-2.php",
+		"single.php",
 		"inc/jetpack.php"
+	],
+	"sass_replace": [
+		"layout/_content-sidebar-sidebar.scss",
+		"layout/_layout.scss",
+		"layout/_sidebar-content-sidebar.scss",
+		"layout/_sidebar-sidebar-content.scss"
 	],
 	"components": [
 		"header/site-branding",

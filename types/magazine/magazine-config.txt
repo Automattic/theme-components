@@ -2,9 +2,14 @@ Config file for magazine
 Theme uniqueness: index page with featured content
 
 Replacement files:
+- archive.php [ adds second sidebar ]
 - index.php [ with featured content ]
-- functions.php [ adds in image size for featured content ]
+- page.php [ adds second sidebar ]
+- single.php [ adds second sidebar ]
+- search.php [ adds second sidebar ]
+- functions.php [ adds in image size for featured content and second sidebar ]
 - inc/jetpack.php [ adds in featured content ]
+- assets/stylesheets/layout/_layout.scss [ adds three-column layouts ]
 
 Component files:
 - header/site-branding.php
@@ -17,4 +22,7 @@ Component files:
 
 New files:
 
-- None.
+- sidebar-2.php
+- /assets/stylesheets/layout/_content-sidebar-sidebar.scss
+- /assets/stylesheets/layout/_sidebar-sidebar-content.scss
+- /assets/stylesheets/layout/_sidebar-content-sidebar.scss

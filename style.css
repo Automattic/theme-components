@@ -13,8 +13,8 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-components is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+Components is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.
+Components is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -629,6 +629,12 @@ table {
   display: block;
 }
 
+.menu-toggle:before {
+  content: "\2630";
+  display: inline-block;
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
@@ -715,6 +721,40 @@ body {
   /* Fallback for when there is no custom background color defined. */
 }
 
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%;
+}
+
+.site-main {
+  margin: 0 25% 0 0;
+}
+
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Single Column / No Active Sidebar
+--------------------------------------------------------------*/
+.no-sidebar .site-main {
+  margin: 0;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 ## Posts
 --------------------------------------------------------------*/
@@ -740,11 +780,6 @@ body {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
-}
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none;
 }
 
 /*--------------------------------------------------------------

@@ -1,2 +1,24 @@
+# Sass
+.sass-cache/
+*.css.map
+
+# CodeKit
 config.codekit
-assets/stylesheets/.sass-cache/
+
+# Gulp
+gulpfile.js
+
+# Grunt
+gruntfile.js
+
+# NPM and Node
+# dependencies for any node modules
+node_modules/
+package.json
+# optional npm cache directory
+.npm
+#logs
+npm-debug.log*
+logs
+*.log
+

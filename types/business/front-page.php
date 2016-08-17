@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php get_template_part( 'components/features/testimonials/testimonials' ); ?>
-		</main>
-	</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
