@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'components/features/portfolio/portfolio' ); ?>
 
-		</main>
-	</div>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
