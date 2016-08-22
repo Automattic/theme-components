@@ -1,4 +1,4 @@
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: #{$breakpoint_tablet}) {
   .content-area {
   	float: right;
   	margin: 0 0 0 (-$size_site-sidebar);
