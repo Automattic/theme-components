@@ -43,7 +43,7 @@ We support the latest two versions of all major browsers, except  Internet Explo
 
 ## Troubleshooting
 
-If you have any problems running Calypso, [please see most common issues](https://github.com/Automattic/theme-components/wiki/Troubleshooting).
+If you have any problems using Components, [please see the most common issues](https://github.com/Automattic/theme-components/wiki/Troubleshooting).
 
 ## License
 
