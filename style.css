@@ -35,13 +35,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Navigation
 # Links
 # Layout
-	## Posts
-	## Pages
+  ## Posts
+  ## Pages
 # Comments
 # Widgets
 # Infinite scroll
 # Media
-	## Galleries
+  ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -854,7 +854,7 @@ object {
 }
 
 .wp-caption {
-  margin-bottom: 1.5em;
+  margin: 1em 0 1.5em;
   max-width: 100%;
 }
 .wp-caption img[class*="wp-image-"] {
@@ -866,6 +866,19 @@ object {
   margin: 0.8075em 0;
 }
 
+/* Ensure center-aligned captions center-align properly. */
+.wp-caption.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Give some padding to floated elements, to prevent them butting up against text. */
+.wp-caption.alignleft {
+  margin-right: 20px;
+}
+.wp-caption.alignright {
+  margin-left: 20px;
+}
 .wp-caption-text {
   text-align: center;
 }
