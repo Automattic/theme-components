@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying testimonials.
+ * The template used for displaying testimonials
  *
  * @package Components
  */
