@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Testimonials archive page.
+ * The template for displaying the Testimonials archive page
  *
  * @package Components
  */
