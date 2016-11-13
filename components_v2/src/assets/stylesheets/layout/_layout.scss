@@ -1,0 +1,40 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+@import "content-sidebar";
+// @import "sidebar-content";
+
+
+/*--------------------------------------------------------------
+## Single Column / No Active Sidebar
+--------------------------------------------------------------*/
+.no-sidebar .site-main {
+  margin: 0;
+}
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+## Posts
+--------------------------------------------------------------*/
+@import "posts";
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
+@import "pages";

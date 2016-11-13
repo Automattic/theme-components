@@ -1,0 +1,16 @@
+.entry-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: $size_site-main;
+}
+
+.feature-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
