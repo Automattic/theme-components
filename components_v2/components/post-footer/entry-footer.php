@@ -45,5 +45,5 @@ endif;
 // components_theme file:template-parts/content.php location:bottom
 
 <footer class="entry-footer">
-	<?php awesome_entry_footer(); ?>
+	<?php components_entry_footer(); ?>
 </footer><!-- .entry-footer -->

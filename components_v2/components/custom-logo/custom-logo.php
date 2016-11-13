@@ -15,4 +15,4 @@ add_theme_support( 'custom-logo', array(
 
 // components_theme file:header.php location:middle
 
-<?php awesome_the_custom_logo(); ?>
+<?php components_the_custom_logo(); ?>
