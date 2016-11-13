@@ -27,7 +27,7 @@
 					<?php /* Start the Loop */ ?>
 					<?php while ( $project_query -> have_posts() ) : $project_query -> the_post(); ?>
 
-						<?php get_template_part( 'components/features/portfolio/content', 'portfolio' ); ?>
+						<?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 
 					<?php endwhile; ?>
 

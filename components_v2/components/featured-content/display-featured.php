@@ -17,7 +17,7 @@ if ( empty( $featured_posts ) ) {
 				setup_postdata( $post );
 
 				 // Include the featured content template.
-				get_template_part( 'components/features/featured-content/content', 'featured' );
+				get_template_part( 'template-parts/content', 'featured' );
 			}
 
 			wp_reset_postdata();

@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'components/features/portfolio/content', 'portfolio-single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'portfolio-single' ); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
