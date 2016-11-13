@@ -26,11 +26,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		{{{ components_theme location:top }}}
+		<!-- components/header/site-branding.php -->
 
-		{{{ components_theme location:middle }}}
+		<?php components_the_custom_logo(); ?>
 
-		<?php components_social_menu(); ?>
+		<!-- components/navigation/navigation-top.php -->
 
 	</header><!-- #masthead -->
 
