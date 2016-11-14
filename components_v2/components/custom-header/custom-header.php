@@ -1,4 +1,4 @@
-// components_theme file:functions.php.php location:require
+// components_theme file:functions.php location:require
 
 <?php
 
