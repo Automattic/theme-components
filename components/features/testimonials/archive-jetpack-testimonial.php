@@ -12,7 +12,7 @@ get_header(); ?>
 	<?php if ( isset( $jetpack_options['featured-image'] ) && '' != $jetpack_options['featured-image'] ) : ?>
 		<div class="components-hero">
 			<?php echo wp_get_attachment_image( (int)$jetpack_options['featured-image'], 'components-hero' ); ?>
-		</div><!-- .hero -->
+		</div><!-- .components-hero -->
 	<?php endif; ?>
 
 	<?php if ( '' != $jetpack_options['page-content'] ) : // only display if content not empty ?>
@@ -30,14 +30,14 @@ get_header(); ?>
 							else
 								esc_html_e( 'Testimonials', 'components' );
 						?>
-					</h1>
+					</h1><!-- .entry-title -->
 				</header><!-- .entry-header -->
 
 				<article class="hentry">
 					<div class="entry-content">
 						<?php echo convert_chars( convert_smilies( wptexturize( stripslashes( wp_filter_post_kses( addslashes( $jetpack_options['page-content'] ) ) ) ) ) ); ?>
-					</div>
-				</article>
+					</div><!-- .entry-content -->
+				</article><!-- .hentry -->
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
