@@ -20,7 +20,7 @@ object {
 }
 
 .wp-caption {
-	margin-bottom: 1.5em;
+	margin: 1em 0 1.5em;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {
@@ -30,6 +30,21 @@ object {
 	.wp-caption-text {
 		margin: 0.8075em 0;
 	}
+}
+
+/* Ensure center-aligned captions center-align properly. */
+.wp-caption.aligncenter {
+		margin-left: auto;
+		margin-right: auto;
+}
+
+/* Give some padding to floated elements, to prevent them butting up against text. */
+.wp-caption.alignleft {
+		margin-right: 20px;
+}
+
+.wp-caption.alignright {
+		margin-left: 20px;
 }
 
 .wp-caption-text {
