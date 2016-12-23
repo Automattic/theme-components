@@ -25,5 +25,8 @@ function components_wpcom_setup() {
 			'url'    => '',
 		);
 	}
+	
+	/* Add WP.com print styles */
+	add_theme_support( 'print-styles' );
 }
 add_action( 'after_setup_theme', 'components_wpcom_setup' );
