@@ -30,3 +30,11 @@ function components_wpcom_setup() {
 	add_theme_support( 'print-styles' );
 }
 add_action( 'after_setup_theme', 'components_wpcom_setup' );
+
+/*
+ * WordPress.com-specific styles
+ */
+function components_wpcom_styles() {
+	wp_enqueue_style( 'components-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', '20160411' );
+}
+add_action( 'wp_enqueue_scripts', 'components_wpcom_styles' );
