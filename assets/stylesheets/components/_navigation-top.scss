@@ -48,7 +48,7 @@
 			left: auto;
 		}
 	}
-	
+
 	li {
 		float: left;
 		position: relative;
@@ -57,7 +57,7 @@
 		&.focus > a {
 		}
 	}
-	
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -82,7 +82,7 @@
 	margin-right: 5px;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: #{$breakpoint_tablet}) {
 	.menu-toggle {
 		display: none;
 	}
