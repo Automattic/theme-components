@@ -97,7 +97,7 @@ project:
 
 The first line of your commit should be a short (fewer than 50 characters)
 summary of what your commit does. Commit messages should be capitalised and use
-the imperative mood: "fix bug", not "fixed bug" or "fixes bug."  
+the imperative mood: "Fix Bug", not "fixed bug" or "fixes bug."  
 
 To add further information or context, enter a blank new line and start a new
 paragraph below, wrapping lines so they don't get too long.

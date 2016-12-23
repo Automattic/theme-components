@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single projects.
+ * The Template for displaying all single projects
  *
  * @package Components
  */

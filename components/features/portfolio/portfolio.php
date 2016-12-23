@@ -1,5 +1,6 @@
 <?php
-/* The template for displaying portfolio items
+/** 
+ * The template for displaying portfolio items
  *
  * @package Components
  */
