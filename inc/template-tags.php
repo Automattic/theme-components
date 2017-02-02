@@ -52,7 +52,8 @@ function components_entry_footer() {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'components' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 		
-		the_tags( sprintf( '<span class="tags-links">%1$s ', esc_html__( 'Tagged', 'components' ) ), ', ', '</span>' );
+		/* translators: used between list items, there is a space after the comma */
+		the_tags( sprintf( '<span class="tags-links">%1$s ', esc_html__( 'Tagged', 'components' ) ), esc_html__( ', ', 'components' ), '</span>' );
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
