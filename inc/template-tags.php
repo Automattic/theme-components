@@ -51,12 +51,8 @@ function components_entry_footer() {
 		if ( $categories_list && components_categorized_blog() ) {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'components' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
-
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'components' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'components' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-		}
+		
+		the_tags( sprintf( '<span class="tags-links">%1$s ', esc_html__( 'Tagged', 'components' ) ), ', ', '</span>' );
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
