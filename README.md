@@ -34,7 +34,7 @@ To start developing, follow these steps:
 3. Make sure you have the Components site theme active, and the latest master branch running.
 4. Activate the plugin through the `Plugins` menu in WordPress.
 
-From there, you can make changes to the local copy of Components in the root of your WordPress install, and the themes you create from your local WordPress install will reflect any changes you've made. You can test and commit code to the project. Just don’t forget to check out our [CONTRIBUTING](./.github/CONTRIBUTING.md) doc – it includes a few details that will make the process a lot smoother.
+From there, you can make changes to the local copy of Components in the root of your WordPress install, and the themes you create from your local WordPress install will reflect any changes you've made. You can test and commit code to the project. Just don’t forget to check out our [CONTRIBUTING](./CONTRIBUTING.md) doc – it includes a few details that will make the process a lot smoother.
 
 ## Security
 
