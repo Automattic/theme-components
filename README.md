@@ -2,6 +2,12 @@
 
 ![beautiful screenshot](http://components.underscores.me/content/themes/components.underscores.me/screenshot.png)
 
+---
+
+**This project is retired, and not maintained.** Please [see this blog post for more information](https://themeshaper.com/2017/06/26/the-future-of-underscores-and-a-new-committer/) or head over to [Underscores](https://underscores.me/) for all your starter theme needs. Thank you to all of the contributors to the project! 
+
+---
+
 A library of shareable, reusable patterns for WordPress themes. Components allows you to generate different types of starter themes for taking your themes where you want them to go, faster.
 
 This repository contains theme components – all the pieces of code that go into making a theme. The code that runs [the Components site](http://components.underscores.me) and generates the starter themes lives in a [different repo](https://github.com/Automattic/components.underscores.me).
